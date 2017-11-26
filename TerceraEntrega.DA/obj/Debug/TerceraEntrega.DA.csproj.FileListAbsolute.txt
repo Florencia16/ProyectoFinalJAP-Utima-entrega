@@ -1,0 +1,7 @@
+c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.DA\obj\Debug\TerceraEntrega.DA.csprojResolveAssemblyReference.cache
+c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.DA\bin\Debug\TerceraEntrega.DA.dll
+c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.DA\bin\Debug\TerceraEntrega.DA.pdb
+c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.DA\bin\Debug\TerceraEntrega.Domain.dll
+c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.DA\bin\Debug\TerceraEntrega.Domain.pdb
+c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.DA\obj\Debug\TerceraEntrega.DA.dll
+c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.DA\obj\Debug\TerceraEntrega.DA.pdb
