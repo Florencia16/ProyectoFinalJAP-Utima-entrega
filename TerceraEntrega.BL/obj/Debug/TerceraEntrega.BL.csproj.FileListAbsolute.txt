@@ -7,3 +7,12 @@ c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEn
 c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.BL\obj\Debug\TerceraEntrega.BL.csprojResolveAssemblyReference.cache
 c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.BL\obj\Debug\TerceraEntrega.BL.dll
 c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.BL\obj\Debug\TerceraEntrega.BL.pdb
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.BL\bin\Debug\TerceraEntrega.BL.dll
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.BL\bin\Debug\TerceraEntrega.BL.pdb
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.BL\bin\Debug\TerceraEntrega.DA.dll
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.BL\bin\Debug\TerceraEntrega.Domain.dll
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.BL\bin\Debug\TerceraEntrega.DA.pdb
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.BL\bin\Debug\TerceraEntrega.Domain.pdb
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.BL\obj\Debug\TerceraEntrega.BL.csprojResolveAssemblyReference.cache
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.BL\obj\Debug\TerceraEntrega.BL.dll
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.BL\obj\Debug\TerceraEntrega.BL.pdb

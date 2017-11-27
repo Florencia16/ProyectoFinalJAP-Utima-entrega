@@ -40,7 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaracteristicaVariableDA.cs" />
+    <Compile Include="ClaseDA.cs" />
     <Compile Include="Conectar.cs" />
+    <Compile Include="HabilidadEspecialDA.cs" />
+    <Compile Include="PersonajeCaracteristicaDA.cs" />
+    <Compile Include="PersonajeDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RazaDA.cs" />
   </ItemGroup>

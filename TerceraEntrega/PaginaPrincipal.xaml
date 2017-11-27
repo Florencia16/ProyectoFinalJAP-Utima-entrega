@@ -6,9 +6,10 @@
       xmlns:local="clr-namespace:TerceraEntrega"
       mc:Ignorable="d" 
       d:DesignHeight="300"
-      Title="PaginaPrincipal" Width="484.05">
-    <ComboBox HorizontalAlignment="Left" Height="22" Margin="6,25,0,0" VerticalAlignment="Top" Width="98" IsEditable="True" Text="Raza">
+      Title="PaginaPrincipal" Width="484">
+    <ComboBox HorizontalAlignment="Left" Height="22" Margin="4,25,0,0" VerticalAlignment="Top" Width="98" IsEditable="True" Text="Raza">
         <Button Content="Crear" Width="88" Click="Button_Click" Height="22"/>
+        <Button Content="Listar" Height="22" Width="88"/>
     </ComboBox>
 
 

@@ -62,7 +62,7 @@ namespace TerceraEntrega.DA
                         retorno.Id = (int)reader["Id"];
                         retorno.nombre = reader["Nombre"].ToString();
                         retorno.Descripcion = reader["Descripcion"].ToString();
-                       // retorno.Personajes = PersonajeDA.ObtenerPorRaza(retorno.Id);
+                        retorno.Personajes = PersonajeDA.ObtenerPorRaza(retorno.Id);
 
                     }
 
@@ -85,8 +85,8 @@ namespace TerceraEntrega.DA
                         laRaza.Id = (int)reader["Id"];
                         laRaza.nombre = reader["Nombre"].ToString();
                         laRaza.Descripcion = reader["Descripcion"].ToString();
-                      //  laRaza.Personajes = PersonajeDA.ObtenerPorRaza(laRaza.Id);
-                      //  laRaza.CaracteristicaVariable = CaracteristicaVariableDA.ObtenerPorRaza(laRaza.Id);
+                        laRaza.Personajes = PersonajeDA.ObtenerPorRaza(laRaza.Id);
+                        laRaza.CaracteristicaVariable = CaracteristicaVariableDA.ObtenerPorRaza(laRaza.Id);
                         retorno.Add(laRaza);
                     }
 

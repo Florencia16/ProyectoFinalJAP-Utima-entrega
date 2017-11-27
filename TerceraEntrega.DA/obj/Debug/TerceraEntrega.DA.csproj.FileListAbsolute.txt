@@ -5,3 +5,10 @@ c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEn
 c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.DA\bin\Debug\TerceraEntrega.Domain.pdb
 c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.DA\obj\Debug\TerceraEntrega.DA.dll
 c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.DA\obj\Debug\TerceraEntrega.DA.pdb
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.DA\bin\Debug\TerceraEntrega.DA.dll
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.DA\bin\Debug\TerceraEntrega.DA.pdb
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.DA\bin\Debug\TerceraEntrega.Domain.dll
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.DA\bin\Debug\TerceraEntrega.Domain.pdb
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.DA\obj\Debug\TerceraEntrega.DA.csprojResolveAssemblyReference.cache
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.DA\obj\Debug\TerceraEntrega.DA.dll
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.DA\obj\Debug\TerceraEntrega.DA.pdb
