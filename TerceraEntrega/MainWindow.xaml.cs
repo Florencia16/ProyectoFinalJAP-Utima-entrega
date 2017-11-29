@@ -23,7 +23,7 @@ namespace TerceraEntrega
         public MainWindow()
         {
             InitializeComponent();
-            this.Navigation.Navigate(new PaginaPrincipal());
+            this.Navigation.Navigate(new Principal());
 
         }
     }

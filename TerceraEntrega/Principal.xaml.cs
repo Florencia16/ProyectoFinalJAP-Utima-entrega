@@ -16,19 +16,26 @@ using System.Windows.Shapes;
 namespace TerceraEntrega
 {
     /// <summary>
-    /// Lógica de interacción para PaginaPrincipal.xaml
+    /// Lógica de interacción para Principal.xaml
     /// </summary>
-    public partial class PaginaPrincipal : Page
+    public partial class Principal : Page
     {
-        public PaginaPrincipal()
+        public Principal()
         {
             InitializeComponent();
         }
+                 
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new AltaRaza());
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //listar raza 
+        }
+
     }
 }
