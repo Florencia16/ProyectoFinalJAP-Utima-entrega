@@ -73,8 +73,8 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <ComboBox HorizontalAlignment="Left" Height="20" Margin="225,109,0,0" Grid.Row="1" VerticalAlignment="Top" Width="185" IsEditable="True" Text="Raza" AutomationProperties.Name="ComboBoxRaza" SelectionChanged="ComboBox_SelectionChanged" RenderTransformOrigin="1.032,0.15" />
-        <ComboBox HorizontalAlignment="Left" Height="20" Margin="225,143,0,0" Grid.Row="1" VerticalAlignment="Top" Width="185" IsEditable="True" Text="Clase"/>
+        <ComboBox HorizontalAlignment="Left" Height="20" Margin="225,109,0,0" Grid.Row="1" VerticalAlignment="Top" Width="185" IsEditable="True" Text="Seleccione la Raza" AutomationProperties.Name="ComboBoxRaza" SelectionChanged="ComboBox_SelectionChanged" RenderTransformOrigin="1.032,0.15" />
+        <ComboBox HorizontalAlignment="Left" Height="20" Margin="225,143,0,0" Grid.Row="1" VerticalAlignment="Top" Width="185" IsEditable="True" Text="Seleccione la Clase" />
         <Button Content="Examinar" HorizontalAlignment="Left" Height="18" Margin="607,155,0,0" Grid.Row="1" VerticalAlignment="Top" Width="114" Click="Button_Click_1"/>
         <TextBox HorizontalAlignment="Left" Height="18" Margin="442,155,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Archivo Seleccionado" Name ="ArchivoSelect" VerticalAlignment="Top" Width="165" TextChanged="TextBox_TextChanged"/>
         <Image HorizontalAlignment="Left" Height="135" Margin="485,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="204" Name ="Foto"/>

@@ -16,17 +16,13 @@ using System.Windows.Shapes;
 namespace TerceraEntrega
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para AltaHE.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AltaHE : Page
     {
-        public MainWindow()
+        public AltaHE()
         {
             InitializeComponent();
-            this.Navigation.Navigate(new Principal());
-
         }
-
-     
     }
 }
