@@ -22,7 +22,7 @@ namespace TerceraEntrega.DA
         
         public string CadenaConexion()
         {
-            string _Connection = "Integrated Security = SSPI; Persist Security Info= False; Initial Catalog = DBFinal; Data Source =DESKTOP-O8S2K8B\\SQLEXPRESS";
+            string _Connection = "Integrated Security = SSPI; Persist Security Info= False; Initial Catalog = DBFinal; Data Source =DESKTOP-O8S2K8B\\SQLEXPRESS01";
             return _Connection; 
         }
        

@@ -3,3 +3,8 @@ c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEn
 c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.Domain\obj\Debug\TerceraEntrega.Domain.csprojResolveAssemblyReference.cache
 c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.Domain\obj\Debug\TerceraEntrega.Domain.dll
 c:\users\ceibal\documents\visual studio 2017\Projects\ProyectoFinalJAP\TerceraEntrega.Domain\obj\Debug\TerceraEntrega.Domain.pdb
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.Domain\bin\Debug\TerceraEntrega.Domain.dll
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.Domain\bin\Debug\TerceraEntrega.Domain.pdb
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.Domain\obj\Debug\TerceraEntrega.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.Domain\obj\Debug\TerceraEntrega.Domain.dll
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.Domain\obj\Debug\TerceraEntrega.Domain.pdb

@@ -54,11 +54,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="AltaPersonaje.xaml">
+    <Page Include="HabilidadEspecial\AltaHE.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AltaRaza.xaml">
+    <Page Include="ListarHE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Personaje\ElementoListaPersonaje.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Personaje\AltaPersonaje.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Raza\AltaRaza.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -66,10 +78,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AltaPersonaje.xaml.cs">
+    <Compile Include="HabilidadEspecial\AltaHE.xaml.cs">
+      <DependentUpon>AltaHE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListarHE.xaml.cs">
+      <DependentUpon>ListarHE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Personaje\ElementoListaPersonaje.xaml.cs">
+      <DependentUpon>ElementoListaPersonaje.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Personaje\AltaPersonaje.xaml.cs">
       <DependentUpon>AltaPersonaje.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AltaRaza.xaml.cs">
+    <Compile Include="Raza\AltaRaza.xaml.cs">
       <DependentUpon>AltaRaza.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
@@ -123,6 +144,9 @@
       <Project>{98997f5a-d97b-4d67-aa64-65df4c35917e}</Project>
       <Name>TerceraEntrega.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clase\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

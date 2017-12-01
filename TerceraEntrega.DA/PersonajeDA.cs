@@ -16,7 +16,7 @@ namespace TerceraEntrega.DA
             int result = 0;
             using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
             {
-                string query = "INSERT INTO Personaje (Nombre, Nivel, Fuerza, Destreza, Constitucion, Inteligencia, Sabiduria, Carisma, ClaseId, RazaId, Imagen) VALUES (@Nombre, @Nivel, @Fuerza, @Destreza, @Constitucion, @Inteligencia, @Sabiduria, @Carisma, @ClaseId, @RazaId)";
+                string query = "INSERT INTO Personaje (Nombre, Nivel, Fuerza, Destreza, Constitucion, Inteligencia, Sabiduria, Carisma, ClaseId, RazaId, ImagenPers) VALUES (@Nombre, @Nivel, @Fuerza, @Destreza, @Constitucion, @Inteligencia, @Sabiduria, @Carisma, @ClaseId, @RazaId)";
                 SqlCommand Comando = new SqlCommand(query, Connection);
                 Comando.Parameters.AddWithValue("@Nombre", p.Nombre);
                 Comando.Parameters.AddWithValue("@Nivel", p.Nivel);
@@ -28,7 +28,7 @@ namespace TerceraEntrega.DA
                 Comando.Parameters.AddWithValue("@Carisma", p.Carisma);
                 Comando.Parameters.AddWithValue("@ClaseId", clase.Id);
                 Comando.Parameters.AddWithValue("@RazaId", raza.Id);
-                Comando.Parameters.AddWithValue("@Imagen", p.Imagen);
+                Comando.Parameters.AddWithValue("@ImagenPers", p.Imagen);
                 //ver el resto de los atributos falta realaciones con raza clase y habilidad especial 
                 Connection.Open();
                 result = Comando.ExecuteNonQuery();
@@ -77,7 +77,7 @@ namespace TerceraEntrega.DA
             List<Personaje> retorno = new List<Personaje>();
             using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
             {
-                string query = "SELECT Id, Nombre, Nivel, Fuerza, Destreza, Constitucion, Inteligencia, Sabiduria, Carisma FROM Personaje WHERE Id=" + id;
+                string query = "SELECT Id, Nombre, Nivel, Fuerza, Destreza, Constitucion, Inteligencia, Sabiduria, Carisma, Imagen FROM Personaje WHERE Id=" + id;
                 SqlCommand Comando = new SqlCommand(query, Connection);
                 Connection.Open();
                 SqlDataReader reader = Comando.ExecuteReader();
@@ -97,6 +97,7 @@ namespace TerceraEntrega.DA
                     p.Inteligencia = (int)reader["Inteligencia"];
                     p.Sabiduria = (int)reader["Sabiduria"];
                     p.Carisma = (int)reader["Carisma"];
+                    p.Imagen=(byte[])reader["Imagen"]; 
                     p.HabilidadesEspeciales = HabilidadEspecialDA.obtenerHabilidadesEspecialesDePersonaje(p.Id);
                     retorno.Add(p);
                 }

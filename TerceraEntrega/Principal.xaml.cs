@@ -24,7 +24,7 @@ namespace TerceraEntrega
         {
             InitializeComponent();
         }
-                 
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -34,8 +34,25 @@ namespace TerceraEntrega
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            //listar raza 
+            this.NavigationService.Navigate(new ListarHE());
+
         }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new AltaHE());
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ListarHE());
+
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new AltaPersonaje());
+
+        }
     }
 }

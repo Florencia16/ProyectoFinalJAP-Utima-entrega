@@ -18,7 +18,8 @@
         <Label Content="Descripción" HorizontalAlignment="Left" Height="26" Margin="10,76,0,0" Grid.Row="1" VerticalAlignment="Top" Width="98"/>
         <TextBox HorizontalAlignment="Left" Height="32" Margin="140,26,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Ingrese nombre" VerticalAlignment="Top" Name ="Nombretxt" Width="169"/>
         <TextBox HorizontalAlignment="Left" Height="49" Margin="140,76,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Ingrese descripción de esta HE" Name ="Descripciontxt" VerticalAlignment="Top" Width="205"/>
-        <Button Content="Cargar" HorizontalAlignment="Left" Height="32" Margin="309,192,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104" Click="Button_Click"/>
-        <Button Content="Volver" HorizontalAlignment="Left" Height="32" Margin="166,192,0,0" Grid.Row="1" VerticalAlignment="Top" Width="113"/>
+        <Button Content="Cargar" HorizontalAlignment="Left" Height="32" Margin="341,192,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104" Click="Button_Click"/>
+        <Button Content="Volver" HorizontalAlignment="Left" Height="32" Margin="196,192,0,0" Grid.Row="1" VerticalAlignment="Top" Width="113"/>
+        <TextBlock HorizontalAlignment="Left" Height="32" Margin="22,192,0,0" Grid.Row="1" TextWrapping="Wrap" Name="Message" VerticalAlignment="Top" Width="169"/>
     </Grid>
 </Page>
