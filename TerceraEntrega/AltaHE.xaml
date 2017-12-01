@@ -5,10 +5,20 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TerceraEntrega"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-      Title="AltaHE">
+      d:DesignHeight="300"
+      Title="AltaHE" Width="454.506">
 
-    <Grid>
-        
+    <Grid Margin="0,-13,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="254*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Alta Habilidad Especial" HorizontalAlignment="Left" Height="38" Margin="10,21,0,0" VerticalAlignment="Top" Width="225" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Height="32" Margin="10,26,0,0" Grid.Row="1" VerticalAlignment="Top" Width="110"/>
+        <Label Content="Descripción" HorizontalAlignment="Left" Height="26" Margin="10,76,0,0" Grid.Row="1" VerticalAlignment="Top" Width="98"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="140,26,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Ingrese nombre" VerticalAlignment="Top" Width="169"/>
+        <TextBox HorizontalAlignment="Left" Height="49" Margin="140,76,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Ingrese descripción de esta HE" VerticalAlignment="Top" Width="205"/>
+        <Button Content="Cargar" HorizontalAlignment="Left" Height="32" Margin="309,192,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104"/>
+        <Button Content="Volver" HorizontalAlignment="Left" Height="32" Margin="166,192,0,0" Grid.Row="1" VerticalAlignment="Top" Width="113"/>
     </Grid>
 </Page>

@@ -68,7 +68,7 @@ namespace TerceraEntrega.BL
             return resultado;
         }
 
-        public static int leerValorCaracteristica()
+        public static int LeerValorCaracteristica()
         {
             int resultado = 0;
             string result = Console.ReadLine();

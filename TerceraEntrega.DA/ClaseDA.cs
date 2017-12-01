@@ -146,7 +146,7 @@ namespace TerceraEntrega.DA
             return result;
         }
 
-        public int quitarHabilidadEspecialAClase(HabilidadEspecial habilidadEspecial, Clase clase)
+        public int QuitarHabilidadEspecialAClase(HabilidadEspecial habilidadEspecial, Clase clase)
         {
             int result = 0;
             using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))

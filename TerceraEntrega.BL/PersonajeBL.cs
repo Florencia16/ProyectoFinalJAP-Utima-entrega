@@ -17,5 +17,38 @@ namespace TerceraEntrega.BL
             return retorno;
         }
 
+        public static Personaje Obtener(int id)
+        {
+            Personaje aux = new Personaje();
+            aux = PersonajeDA.Obtener(id);
+            return aux;
+        }
+
+        public static int Modificar(Personaje p, Clase clase, Raza raza)
+        {
+            int retorno = -1;
+            retorno = PersonajeDA.Modificar(p, clase, raza);
+            return retorno;
+        }
+
+        public static List<Personaje> Listar()
+        {
+            List<Personaje> aux = new List<Personaje>();
+            aux = PersonajeDA.Listar();
+            return aux;
+        }
+
+        public static int Eliminar(Personaje p)
+        {
+            int retorno = -1;
+            retorno = PersonajeDA.Eliminar(p);
+            return retorno;
+        }
+        public static void asignarHabilidadEspecialAPersonaje(HabilidadEspecial habilidadEspecial, Personaje personaje)
+        {
+            PersonajeDA.asignarHabilidadEspecialAPersonaje(habilidadEspecial, personaje);
+        }
     }
+
 }
+
