@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClaseBL.cs" />
     <Compile Include="HabilidadEspecialBL.cs" />
     <Compile Include="InputUtils.cs" />
     <Compile Include="PersonajeBL.cs" />

@@ -169,7 +169,10 @@ namespace TerceraEntrega
             fs.Read(imagen, 0, imagen.Length);
         }
 
-        
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.GoBack();
+        }
     }
     
 }
