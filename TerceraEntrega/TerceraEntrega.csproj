@@ -58,7 +58,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ListarHE.xaml">
+    <Page Include="HabilidadEspecial\ListarHE.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -81,7 +81,7 @@
     <Compile Include="HabilidadEspecial\AltaHE.xaml.cs">
       <DependentUpon>AltaHE.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ListarHE.xaml.cs">
+    <Compile Include="HabilidadEspecial\ListarHE.xaml.cs">
       <DependentUpon>ListarHE.xaml</DependentUpon>
     </Compile>
     <Compile Include="Personaje\ElementoListaPersonaje.xaml.cs">

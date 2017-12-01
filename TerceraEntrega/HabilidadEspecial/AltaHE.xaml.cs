@@ -69,8 +69,7 @@ namespace TerceraEntrega
                 {
                     throw new Exception("Debe especificar una descripción para la Habilidad Especial");
                 }
-
-
+        
                 // Asignación de datos a la HE  
                 h.Nombre = Nombretxt.Text;
                 h.Descripcion = Descripciontxt.Text;

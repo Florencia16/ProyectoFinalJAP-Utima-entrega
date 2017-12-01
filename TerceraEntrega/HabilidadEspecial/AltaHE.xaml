@@ -14,10 +14,10 @@
             <RowDefinition Height="254*"/>
         </Grid.RowDefinitions>
         <Label Content="Alta Habilidad Especial" HorizontalAlignment="Left" Height="38" Margin="10,21,0,0" VerticalAlignment="Top" Width="225" FontSize="16" FontWeight="Bold"/>
-        <Label Content="Nombre" HorizontalAlignment="Left" Height="32" Margin="10,26,0,0" Grid.Row="1" VerticalAlignment="Top" Width="110"/>
-        <Label Content="Descripción" HorizontalAlignment="Left" Height="26" Margin="10,76,0,0" Grid.Row="1" VerticalAlignment="Top" Width="98"/>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="140,26,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Ingrese nombre" VerticalAlignment="Top" Name ="Nombretxt" Width="169"/>
-        <TextBox HorizontalAlignment="Left" Height="49" Margin="140,76,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Ingrese descripción de esta HE" Name ="Descripciontxt" VerticalAlignment="Top" Width="205"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Height="32" Margin="22,44,0,0" Grid.Row="1" VerticalAlignment="Top" Width="62"/>
+        <Label Content="Descripción" HorizontalAlignment="Left" Height="26" Margin="10,99,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="89,48,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Ingrese nombre" VerticalAlignment="Top" Name ="Nombretxt" Width="169"/>
+        <TextBox HorizontalAlignment="Left" Height="49" Margin="89,103,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Ingrese descripción de esta HE" Name ="Descripciontxt" VerticalAlignment="Top" Width="205"/>
         <Button Content="Cargar" HorizontalAlignment="Left" Height="32" Margin="341,192,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104" Click="Button_Click"/>
         <Button Content="Volver" HorizontalAlignment="Left" Height="32" Margin="196,192,0,0" Grid.Row="1" VerticalAlignment="Top" Width="113"/>
         <TextBlock HorizontalAlignment="Left" Height="32" Margin="22,192,0,0" Grid.Row="1" TextWrapping="Wrap" Name="Message" VerticalAlignment="Top" Width="169"/>

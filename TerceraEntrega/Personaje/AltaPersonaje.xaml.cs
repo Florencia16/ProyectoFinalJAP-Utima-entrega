@@ -173,6 +173,8 @@ namespace TerceraEntrega
         {
             this.NavigationService.GoBack();
         }
+
+        
     }
     
 }
