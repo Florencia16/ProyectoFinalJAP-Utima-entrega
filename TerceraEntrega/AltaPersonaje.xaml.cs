@@ -13,7 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TerceraEntrega.Domain;
-using TerceraEntrega.BL; 
+using TerceraEntrega.BL;
+using Microsoft.Win32;
+using System.IO;
 
 namespace TerceraEntrega
 {
@@ -23,6 +25,17 @@ namespace TerceraEntrega
     /// 
     public partial class AltaPersonaje : Page
     {
+        byte[] imagen;
+        BitmapDecoder bitCoder;
+
+        private enum TipoMensaje
+        {
+            Default = 0,
+            Correcto = 1,
+            Error = 2
+        }
+
+
         public AltaPersonaje()
         {
             InitializeComponent();
@@ -30,26 +43,133 @@ namespace TerceraEntrega
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int auxborrar = 0; 
-            Personaje p = new Personaje();
-            Clase c = new Clase();
-            Raza r = new Raza(); 
-            this.NombreTxt.Text = p.Nombre;
-            p.Nivel =int.Parse(this.NivelTxt.Text);
-            p.Sabiduria = int.Parse(this.SabTxt.Text);
-            p.Destreza = int.Parse(this.DesTXT.Text);
-            p.Carisma = int.Parse(this.CarTxt.Text);
-            p.Constitucion = int.Parse(this.ConstTxt.Text);
-            p.Fuerza = int.Parse(this.FueTxt.Text);
-            p.Inteligencia = int.Parse(this.InteTxt.Text);
-            
+            try
+            {
+                Personaje p = new Personaje();
+                Clase c = new Clase();
+                Raza r = new Raza(); 
 
-            auxborrar = PersonajeBL.Crear(p, c,  r);           
-           
+                
+                int Nivel = -1;
+                int Fuerza = -1;
+                int Destreza = -1;
+                int Constitucion = -1;
+                int Inteligencia = -1;
+                int Sabiduria = -1;
+                int Carisma = -1; 
+
+                //Validacion de los valores ingresados 
+                if (string.IsNullOrEmpty(this.NombreTxt.Text))
+                {
+                    throw new Exception("Debe especificar un nombre para el personaje");
+                }
+                if (!int.TryParse(this.NivelTxt.Text, out Nivel) && Nivel > 0)
+                {
+                    throw new Exception("El nivel especificado no es válido.");
+                }
+                if (!int.TryParse(this.FueTxt.Text, out Fuerza) && Fuerza > 0)
+                {
+                    throw new Exception("El valor de Fuerza especificado no es válido.");
+                }
+                if (!int.TryParse(this.DesTXT.Text, out Destreza) && Destreza > 0)
+                {
+                    throw new Exception("El valor de Destreza especificado no es válido.");
+                }
+                if (!int.TryParse(this.ConstTxt.Text, out Constitucion) && Constitucion > 0)
+                {
+                    throw new Exception("El valor de Constitución especificado no es válido.");
+                }
+                if (!int.TryParse(this.InteTxt.Text, out Inteligencia) && Inteligencia > 0)
+                {
+                    throw new Exception("El valor de Inteligencia especificado no es válido.");
+                }
+                if (!int.TryParse(this.SabTxt.Text, out Sabiduria) && Sabiduria > 0)
+                {
+                    throw new Exception("El valor de Sabiduria especificado no es válido.");
+                }
+                if (!int.TryParse(this.CarTxt.Text, out Carisma) && Carisma > 0)
+                {
+                    throw new Exception("El valor de Carisma especificado no es válido.");
+                }
+
+
+
+                // Asignación de datos al personaje 
+                p.Nombre = NombreTxt.Text;
+                p.Nivel = Nivel;
+                p.Fuerza = Fuerza;
+                p.Destreza = Destreza;
+                p.Constitucion = Constitucion;
+                p.Inteligencia = Inteligencia;
+                p.Sabiduria = Sabiduria;
+                p.Carisma = Carisma;
+                p.Imagen = imagen; 
+
+                //Se obtiene la clase seleccionada del personaje a crear 
+                
+
+
+                //Alta del Personaje
+                int newPersonaje = PersonajeBL.Crear(p,c,r );
+                if (newPersonaje > 0)
+                {
+                   SetClientMessage("Personaje agregado correctamente!", TipoMensaje.Correcto);
+                   
+                }
+
+            }
+            catch (Exception ex)
+            {
+                SetClientMessage(ex.Message, TipoMensaje.Error);
+            }
+
 
 
         }
 
+        private void SetClientMessage(string message, TipoMensaje tipoMsj = TipoMensaje.Default)
+        {
+            switch (tipoMsj)
+            {
+                case TipoMensaje.Default:
+                    break;
+                case TipoMensaje.Correcto:
+                    this.Message.Foreground = Brushes.DarkSeaGreen;
+                    break;
+                case TipoMensaje.Error:
+                    this.Message.Foreground = Brushes.Red;
+                    break;
+            }
 
+            this.Message.Text = message;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            
+            OpenFileDialog OD = new OpenFileDialog();
+            OD.Filter = "Imagenes jpg(*.jpg)| *.jpg | All Files(*.*) | *.*";
+            if (OD.ShowDialog() == true)
+            {
+                using (Stream stream = OD.OpenFile())
+                {
+                    bitCoder = BitmapDecoder.Create(stream, BitmapCreateOptions.PreservePixelFormat,
+                    BitmapCacheOption.OnLoad);
+                    Foto.Source = bitCoder.Frames[0];
+                    this.ArchivoSelect.Text = OD.FileName;
+                }
+            }
+            else
+            {
+                Foto.Source = null;
+            }
+            System.IO.FileStream fs;
+            fs = new System.IO.FileStream(this.ArchivoSelect.Text, System.IO.FileMode.Open);
+            imagen = new byte[Convert.ToInt32(fs.Length.ToString())];
+            fs.Read(imagen, 0, imagen.Length);
+        }
+
+        
     }
+    
 }

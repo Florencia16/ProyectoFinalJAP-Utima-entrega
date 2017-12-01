@@ -10,8 +10,9 @@
     <Grid Margin="-3,0,13,0" RenderTransformOrigin="0.501,0.404">
         <Grid.RowDefinitions>
             <RowDefinition Height="41*"/>
-            <RowDefinition Height="182*"/>
-            <RowDefinition Height="182*"/>
+            <RowDefinition Height="180*"/>
+            <RowDefinition Height="132*"/>
+            <RowDefinition Height="52*"/>
         </Grid.RowDefinitions>
         <Label Content="Crear Personaje" HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" VerticalAlignment="Top" Width="276" Grid.RowSpan="2"/>
         <Label Content="Nombre" HorizontalAlignment="Left" Height="32" Margin="153,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="60"/>
@@ -69,11 +70,11 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <ComboBox HorizontalAlignment="Left" Height="20" Margin="218,84,0,0" Grid.Row="1" VerticalAlignment="Top" Width="185" IsEditable="True" Text="Raza"/>
+        <ComboBox HorizontalAlignment="Left" Height="20" Margin="214,84,0,0" Grid.Row="1" VerticalAlignment="Top" Width="185" IsEditable="True" Text="Raza" AutomationProperties.Name="ComboBoxRaza" SelectionChanged="ComboBox_SelectionChanged" />
         <ComboBox HorizontalAlignment="Left" Height="20" Margin="218,125,0,0" Grid.Row="1" VerticalAlignment="Top" Width="185" IsEditable="True" Text="Clase"/>
-        <Button Content="Examinar" HorizontalAlignment="Left" Height="18" Margin="637,154,0,0" Grid.Row="1" VerticalAlignment="Top" Width="114"/>
-        <TextBox HorizontalAlignment="Left" Height="18" Margin="472,154,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Archivo Seleccionado" VerticalAlignment="Top" Width="165"/>
-        <Image HorizontalAlignment="Left" Height="135" Margin="498,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="204"/>
+        <Button Content="Examinar" HorizontalAlignment="Left" Height="18" Margin="637,154,0,0" Grid.Row="1" VerticalAlignment="Top" Width="114" Click="Button_Click_1"/>
+        <TextBox HorizontalAlignment="Left" Height="18" Margin="472,154,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Archivo Seleccionado" Name ="ArchivoSelect" VerticalAlignment="Top" Width="165" TextChanged="TextBox_TextChanged"/>
+        <Image HorizontalAlignment="Left" Height="135" Margin="498,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="204" Name ="Foto"/>
         <TextBox HorizontalAlignment="Left" Height="32" Margin="218,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Nombre" Name ="NombreTxt" VerticalAlignment="Top" Width="198"/>
         <TextBox HorizontalAlignment="Left" Height="32" Margin="218,47,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Nivel" Name ="NivelTxt" VerticalAlignment="Top" Width="198"/>
         <TextBox HorizontalAlignment="Left" Height="26" Margin="268,0,0,0" Grid.Row="2" TextWrapping="Wrap" Text="0" Name ="FueTxt" VerticalAlignment="Top" Width="63"/>
@@ -82,8 +83,9 @@
         <TextBox HorizontalAlignment="Left" Height="26" Margin="498,0,0,0" Grid.Row="2" TextWrapping="Wrap" Text="0" Name ="InteTxt" VerticalAlignment="Top" Width="63"/>
         <TextBox HorizontalAlignment="Left" Height="26" Margin="498,44,0,0" Grid.Row="2" TextWrapping="Wrap" Text="0" Name="SabTxt" VerticalAlignment="Top" Width="63"/>
         <TextBox HorizontalAlignment="Left" Height="26" Margin="500,87,0,0" Grid.Row="2" TextWrapping="Wrap" Text="0" Name ="CarTxt" VerticalAlignment="Top" Width="63"/>
-        <Button Content="Cargar" HorizontalAlignment="Left" Height="36" Margin="673,136,0,0" Grid.Row="2" VerticalAlignment="Top" Width="98" Click="Button_Click"/>
-        <Button Content="Volver" HorizontalAlignment="Left" Height="36" Margin="498,136,0,0" Grid.Row="2" VerticalAlignment="Top" Width="102"/>
+        <Button Content="Cargar" HorizontalAlignment="Left" Height="36" Margin="673,4.018,0,0" Grid.Row="3" VerticalAlignment="Top" Width="98" Click="Button_Click"/>
+        <Button Content="Volver" HorizontalAlignment="Left" Height="36" Margin="498,4.018,0,0" Grid.Row="3" VerticalAlignment="Top" Width="102"/>
+        <TextBlock HorizontalAlignment="Left" Height="32" Margin="27,10,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Name ="Message" Width="445"/>
 
     </Grid>
 </Page>

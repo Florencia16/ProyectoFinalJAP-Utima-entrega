@@ -84,6 +84,10 @@ namespace TerceraEntrega
         internal System.Windows.Controls.TextBox InteTxt;
         internal System.Windows.Controls.TextBox SabTxt;
         internal System.Windows.Controls.TextBox CarTxt;
+        internal System.Windows.Controls.ComboBox ComboBoxRaza;
+        internal System.Windows.Controls.TextBlock Message;
+        internal System.Windows.Controls.TextBox ArchivoSelect;
+        internal System.Windows.Controls.Image Foto;
     }
 }
 
