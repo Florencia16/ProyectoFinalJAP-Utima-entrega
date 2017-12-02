@@ -1,0 +1,30 @@
+﻿<Page x:Class="TerceraEntrega.ManejadorClase"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TerceraEntrega"
+      mc:Ignorable="d"
+      Title="ManejadorClase" Width="679.032" Height="395.161">
+
+    <Grid>
+        <Label Content="Manejador de Clases" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="248" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Height="29" Margin="27,55,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Descripción" HorizontalAlignment="Left" Height="35" Margin="27,89,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="29" Margin="131,55,0,0" TextWrapping="Wrap" Name="NomTxt" VerticalAlignment="Top" Width="166"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="131,89,0,0" TextWrapping="Wrap" Name="DesTxt" VerticalAlignment="Top" Width="269"/>
+        <ListView Name ="ListClase" HorizontalAlignment="Left" Height="219" Margin="27,152,0,0" VerticalAlignment="Top" Width="446" SelectionChanged="ListClase_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Crear" HorizontalAlignment="Left" Height="32" Margin="521,52,0,0" VerticalAlignment="Top" Width="116" Click="btoCargar"/>
+        <Button Content="Modificar" HorizontalAlignment="Left" Height="33" Margin="521,103,0,0" VerticalAlignment="Top" Width="116" Click="btoModificar"/>
+        <Button Content="Elminar" HorizontalAlignment="Left" Height="37" Margin="521,152,0,0" VerticalAlignment="Top" Width="116" Click="btoEliminar"/>
+        <Button Content="Agregar HE" HorizontalAlignment="Left" Height="33" Margin="521,242,0,0" VerticalAlignment="Top" Width="116" Click="btoAgHE"/>
+        <Button Content="Quitar HE" HorizontalAlignment="Left" Height="33" Margin="521,297,0,0" VerticalAlignment="Top" Width="116" Click="btoQuiHE"/>
+        <Button Content="Volver a la Pagina Principal" HorizontalAlignment="Left" Height="33" Margin="494,352,0,0" VerticalAlignment="Top" Width="156" Click="btoVolver"/>
+    </Grid>
+</Page>

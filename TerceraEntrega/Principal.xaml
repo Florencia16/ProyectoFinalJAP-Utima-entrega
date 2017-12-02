@@ -23,8 +23,7 @@
             <Button Content="Listar" Height="18" Width="110" Click="Button_Click_1"/>
         </ComboBox>
         <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="316,10,0,0" IsEditable="True" Text="Clase" Height="22">
-            <Button Content="Crear" Width="110"/>
-            <Button Content="Listar" Width="110"/>
+            <Button Content="ManejadorClase" Width="110" Click="btoManejadorClase"/>
         </ComboBox>
         <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="480,10,0,0" Text="HabilidadEspecial" IsEditable="True">
             <Button Content="Crear" Height="20" Width="110" Click="Button_Click_2"/>

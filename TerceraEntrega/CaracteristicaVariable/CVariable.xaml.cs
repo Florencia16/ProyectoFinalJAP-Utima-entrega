@@ -39,7 +39,7 @@ namespace TerceraEntrega
             {
                 if (string.IsNullOrEmpty(this.NombreTxt.Text))
                 {
-                    throw new Exception("Debe especificar un nombre para la Habilidad Especial");
+                    throw new Exception("Debe especificar un nombre para la Caracteristica Variable");
                 }
                 CaracteristicaVariable CarVariable = new CaracteristicaVariable();
                 CarVariable.Nombre = NombreTxt.Text;

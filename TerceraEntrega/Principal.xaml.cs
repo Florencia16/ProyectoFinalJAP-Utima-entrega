@@ -59,5 +59,10 @@ namespace TerceraEntrega
         {
             this.NavigationService.Navigate(new CVariable());
         }
+
+        private void btoManejadorClase(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ManejadorClase());
+        }
     }
 }

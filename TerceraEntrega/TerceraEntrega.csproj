@@ -54,11 +54,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="CVariable.xaml">
+    <Page Include="CaracteristicaVariable\CVariable.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="HabilidadEspecial\AltaHE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Clase\ManejadorClase.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -82,11 +86,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="CVariable.xaml.cs">
+    <Compile Include="CaracteristicaVariable\CVariable.xaml.cs">
       <DependentUpon>CVariable.xaml</DependentUpon>
     </Compile>
     <Compile Include="HabilidadEspecial\AltaHE.xaml.cs">
       <DependentUpon>AltaHE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Clase\ManejadorClase.xaml.cs">
+      <DependentUpon>ManejadorClase.xaml</DependentUpon>
     </Compile>
     <Compile Include="Personaje\PerCaracteristica.xaml.cs">
       <DependentUpon>PerCaracteristica.xaml</DependentUpon>
@@ -152,9 +159,6 @@
       <Name>TerceraEntrega.Domain</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CaracteristicaVariable\" />
-    <Folder Include="Clase\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
