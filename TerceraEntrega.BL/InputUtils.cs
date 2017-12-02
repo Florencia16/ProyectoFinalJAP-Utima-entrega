@@ -68,17 +68,7 @@ namespace TerceraEntrega.BL
             return resultado;
         }
 
-        public static int LeerValorCaracteristica()
-        {
-            int resultado = 0;
-            string result = Console.ReadLine();
-            while (result == null || result == "" || !int.TryParse(result, out resultado) || resultado <= 0 || resultado > 10)
-            {
-                Console.WriteLine("El valor ingresado es incorrecto.");
-                result = Console.ReadLine();
-            }
-            return resultado;
-        }
+       
 
     }
 }

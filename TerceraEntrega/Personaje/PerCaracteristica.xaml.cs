@@ -25,7 +25,7 @@ namespace TerceraEntrega
         public PerCaracteristica()
         {
             InitializeComponent();
-            ListCaracteristica.ItemsSource = CaracteristicaVariableBL.Listar(); 
+            ListCaracteristica.ItemsSource = CaracteristicaVariableBL.Listar();
         }
 
         private void ListCaracteristica_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -35,11 +35,32 @@ namespace TerceraEntrega
 
         private void btoCargar_Click(object sender, RoutedEventArgs e)
         {
+            bool Completo = false;
             CaracteristicaVariable SelectItem = (CaracteristicaVariable)ListCaracteristica.SelectedItem;
             int IdPersonaje = PersonajeBL.Listar().Max(x => x.Id);
             int valor = Convert.ToInt32(ValorTxt.Text);
-            PersonajeCaracteristicaBL.Crear(IdPersonaje, SelectItem.Id, valor); 
+            string result = ValorTxt.Text;
+            while (result == null || result == "" || !int.TryParse(result, out valor) || valor <= 0 || valor > 10)
+            {
+                MessageBox.Show("El valor Ingresado no es el correcto, intente nuevamente", "Error");
+                valor = Convert.ToInt32(ValorTxt.Text);
+            }
+            PersonajeCaracteristicaBL.Crear(IdPersonaje, SelectItem.Id, valor);
+            MessageBox.Show("Se cargo el valor exitosamente para el Personaje: " + PersonajeBL.Obtener(IdPersonaje).Nombre, "Felicidades");
+            foreach(PersonajeCaracteristica PerCar in PersonajeCaracteristicaBL.Listar())
+            {
+                if((PerCar.Personaje.Id == IdPersonaje) && (PerCar.CaracteristicaVariable.Id==SelectItem.Id)&& (valor != 0))
+                {
+                    Completo = true; 
+                }
+            }
+            if (Completo == true)
+            {
+                MessageBox.Show("Has completado todas las caracteristicas variables existentes en el sistema para este Personaje", "Genial!!"); 
+            }
+
         }
+
     }
 
 }

@@ -20,7 +20,7 @@ namespace TerceraEntrega.BL
             PersonajeCaracteristicaDA.Modificar(personajeCaracteristica);
 
         }
-        public static List<PersonajeCaracteristica> listar()
+        public static List<PersonajeCaracteristica> Listar()
         {
             List<PersonajeCaracteristica> aux = new List<PersonajeCaracteristica>();
             aux = PersonajeCaracteristicaDA.Listar();

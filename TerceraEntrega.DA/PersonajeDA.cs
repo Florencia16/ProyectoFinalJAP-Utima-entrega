@@ -76,7 +76,7 @@ namespace TerceraEntrega.DA
             List<Personaje> retorno = new List<Personaje>();
             using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
             {
-                string query = "SELECT Id, Nombre, Nivel, Fuerza, Destreza, Constitucion, Inteligencia, Sabiduria, Carisma, Imagen FROM Personaje WHERE Id=" + id;
+                string query = "SELECT Id, Nombre, Nivel, Fuerza, Destreza, Constitucion, Inteligencia, Sabiduria, Carisma, ImagenPers FROM Personaje WHERE Id=" + id;
                 SqlCommand Comando = new SqlCommand(query, Connection);
                 Connection.Open();
                 SqlDataReader reader = Comando.ExecuteReader();
@@ -96,7 +96,7 @@ namespace TerceraEntrega.DA
                     p.Inteligencia = (int)reader["Inteligencia"];
                     p.Sabiduria = (int)reader["Sabiduria"];
                     p.Carisma = (int)reader["Carisma"];
-                    p.Imagen=(byte[])reader["Imagen"]; 
+                    p.Imagen=(byte[])reader["ImagenPers"]; 
                     p.HabilidadesEspeciales = HabilidadEspecialDA.obtenerHabilidadesEspecialesDePersonaje(p.Id);
                     retorno.Add(p);
                 }

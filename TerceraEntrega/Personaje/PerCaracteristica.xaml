@@ -5,17 +5,17 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TerceraEntrega"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-      Title="PerCaracteristica">
+      d:DesignHeight="300"
+      Title="PerCaracteristica" Width="500">
 
     <Grid>
         <Frame HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300"/>
         <TextBlock HorizontalAlignment="Left" Height="41" Margin="10,10,0,0" TextWrapping="Wrap" Text="Caracteristica" VerticalAlignment="Top" Width="175" FontSize="16" FontWeight="Bold"/>
-        <ListView Name ="ListCaracteristica" HorizontalAlignment="Left" Height="176" Margin="10,56,0,0" VerticalAlignment="Top" Width="280" SelectionChanged="ListCaracteristica_SelectionChanged">
+        <ListView Name ="ListCaracteristica" HorizontalAlignment="Left" Height="176" Margin="10,56,0,0" VerticalAlignment="Top" Width="146" SelectionChanged="ListCaracteristica_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn>
-                        <TextBlock Text="Id" />
+                        <TextBlock Text="Nombre" Height="16" Width="122" />
                     </GridViewColumn>
                 </GridView>
             </ListView.View>
@@ -23,6 +23,7 @@
         <TextBox Name ="ValorTxt" HorizontalAlignment="Left" Height="21" Margin="114,241,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="71"/>
         <TextBlock HorizontalAlignment="Left" Height="36" Margin="10,241,0,0" TextWrapping="Wrap" Text="Ingrese el valor" VerticalAlignment="Top" Width="99"/>
         <Button Name="btoCargar" Content="Cargar" HorizontalAlignment="Left" Height="21" Margin="210,241,0,0" VerticalAlignment="Top" Width="80" Click="btoCargar_Click"/>
+        <TextBlock Name ="MensPerCaracteristica" HorizontalAlignment="Left" Height="47" Margin="191,146,0,0" TextWrapping="Wrap" Text="{Binding Menssage}" VerticalAlignment="Top" Width="277"/>
 
     </Grid>
 </Page>

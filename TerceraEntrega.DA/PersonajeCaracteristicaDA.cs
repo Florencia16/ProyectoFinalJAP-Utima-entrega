@@ -14,21 +14,37 @@ namespace TerceraEntrega.DA
         {
             using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
             {
-                string query = "INSERT INTO IdePer, IdeCAR, Valor VALUES @IDPER, @IDCAR, @VALOR";
+                string query = "INSERT INTO PersonajeCaracteristica (IdPer, IdCar, Valor) VALUES (@IDPER, @IDCAR, @VALOR)";
                 SqlCommand Comando = new SqlCommand(query, Connection);
                 Comando.Parameters.AddWithValue("@IdPER", IdePer);
                 Comando.Parameters.AddWithValue("@IDCAR", IdeCar);
                 Comando.Parameters.AddWithValue("@VALOR", valor);
                 Connection.Open();
-              
+                Comando.ExecuteNonQuery();
+
             }
         }
 
         public static List<PersonajeCaracteristica> Listar()
         {
 
-            List<PersonajeCaracteristica> retorno = null;
+            List<PersonajeCaracteristica> retorno = new List<PersonajeCaracteristica>();
+            using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
+            {
+                string query = "SELECT * FROM PersonajeCaracteristica ";
+                SqlCommand Comando = new SqlCommand(query, Connection);
+                Connection.Open();
+                SqlDataReader reader = Comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    PersonajeCaracteristica laPersonajeCaracteristica = new PersonajeCaracteristica();
+                    laPersonajeCaracteristica.Valor = (int)reader["Valor"];
+                    laPersonajeCaracteristica.Personaje = PersonajeDA.Obtener((int)reader["IdPER"]);
+                    laPersonajeCaracteristica.CaracteristicaVariable = CaracteristicaVariableDA.Obtener((int)reader["IdCAR"]);
+                    retorno.Add(laPersonajeCaracteristica);
+                }
 
+            }
             return retorno;
         }
         public static void Obtener(PersonajeCaracteristica elPersonajeCaracteristica)
@@ -52,7 +68,6 @@ namespace TerceraEntrega.DA
                 Comando.Parameters.AddWithValue("@IdPER", elPersonajeCaracteristica.Personaje.Id);
                 Comando.Parameters.AddWithValue("@IdCAR", elPersonajeCaracteristica.CaracteristicaVariable.Id);
                 Comando.Parameters.AddWithValue("@Valor", elPersonajeCaracteristica.Valor);
-                Comando.Parameters.AddWithValue("@Id", elPersonajeCaracteristica.Id);
                 Connection.Open();
                 Comando.ExecuteNonQuery();
             }
@@ -70,7 +85,6 @@ namespace TerceraEntrega.DA
                 while (reader.Read())
                 {
                     PersonajeCaracteristica laPersonajeCaracteristica = new PersonajeCaracteristica();
-                    laPersonajeCaracteristica.Id = CaracteristicaVariableDA.Obtener((int)reader["IdCAR"]).Id;
                     laPersonajeCaracteristica.Valor = (int)reader["Valor"];
                     laPersonajeCaracteristica.Personaje = PersonajeDA.Obtener((int)reader["IdPER"]);
                     laPersonajeCaracteristica.CaracteristicaVariable = CaracteristicaVariableDA.Obtener((int)reader["IdCAR"]);
