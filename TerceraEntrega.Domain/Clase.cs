@@ -13,5 +13,10 @@ namespace TerceraEntrega.Domain
         public String Descripcion;
         public List<Personaje> Personajes { get; set; }
         public List<HabilidadEspecial> HabilidadesEspeciales { get; set; }
+        public override string ToString()
+        {
+            return this.Nombre;
+        }
+
     }
 }

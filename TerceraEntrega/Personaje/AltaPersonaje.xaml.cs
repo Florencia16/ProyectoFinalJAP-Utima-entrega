@@ -25,6 +25,9 @@ namespace TerceraEntrega
     /// 
     public partial class AltaPersonaje : Page
     {
+        Personaje p = new Personaje();
+        Clase c = new Clase();
+        Raza r = new Raza(); 
         byte[] imagen;
         BitmapDecoder bitCoder;
 
@@ -39,17 +42,19 @@ namespace TerceraEntrega
         public AltaPersonaje()
         {
             InitializeComponent();
+
+            CboRaza.ItemsSource = RazaBL.Listar();
+            CboRaza.SelectedValuePath = "Id";
+
+            CboClase.ItemsSource = ClaseBL.Listar();
+            CboClase.SelectedValuePath = "Id";
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try
-            {
-                Personaje p = new Personaje();
-                Clase c = new Clase();
-                Raza r = new Raza(); 
-
-                
+            {                              
                 int Nivel = -1;
                 int Fuerza = -1;
                 int Destreza = -1;
@@ -105,10 +110,7 @@ namespace TerceraEntrega
                 p.Carisma = Carisma;
                 p.Imagen = imagen; 
 
-                //Se obtiene la clase seleccionada del personaje a crear 
-                
-
-
+            
                 //Alta del Personaje
                 int newPersonaje = PersonajeBL.Crear(p,c,r );
                 if (newPersonaje > 0)
@@ -123,9 +125,8 @@ namespace TerceraEntrega
                 SetClientMessage(ex.Message, TipoMensaje.Error);
             }
 
-
-
         }
+
 
         private void SetClientMessage(string message, TipoMensaje tipoMsj = TipoMensaje.Default)
         {
@@ -174,7 +175,21 @@ namespace TerceraEntrega
             this.NavigationService.GoBack();
         }
 
+        private void tata(object sender, SelectionChangedEventArgs e)
+        {
+            int PosCombo = CboRaza.SelectedIndex; 
+            //obtiene la raza 
+            r = (Raza)CboRaza.SelectedItem;           
+        }
+
         
+        private void ComboClase(object sender, SelectionChangedEventArgs e)
+        {
+            int selectIndex = CboClase.SelectedIndex;
+            c = (Clase)CboClase.SelectedItem;
+        }
+
+   
     }
     
 }

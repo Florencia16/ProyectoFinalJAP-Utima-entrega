@@ -16,7 +16,7 @@ namespace TerceraEntrega.DA
             int result = 0;
             using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
             {
-                string query = "INSERT INTO Personaje (Nombre, Nivel, Fuerza, Destreza, Constitucion, Inteligencia, Sabiduria, Carisma, ClaseId, RazaId, ImagenPers) VALUES (@Nombre, @Nivel, @Fuerza, @Destreza, @Constitucion, @Inteligencia, @Sabiduria, @Carisma, @ClaseId, @RazaId)";
+                string query = "INSERT INTO Personaje (Nombre, Nivel, Fuerza, Destreza, Constitucion, Inteligencia, Sabiduria, Carisma, ClaseId, RazaId, ImagenPers) VALUES (@Nombre, @Nivel, @Fuerza, @Destreza, @Constitucion, @Inteligencia, @Sabiduria, @Carisma, @ClaseId, @RazaId, @ImagenPers)";
                 SqlCommand Comando = new SqlCommand(query, Connection);
                 Comando.Parameters.AddWithValue("@Nombre", p.Nombre);
                 Comando.Parameters.AddWithValue("@Nivel", p.Nivel);
@@ -29,7 +29,6 @@ namespace TerceraEntrega.DA
                 Comando.Parameters.AddWithValue("@ClaseId", clase.Id);
                 Comando.Parameters.AddWithValue("@RazaId", raza.Id);
                 Comando.Parameters.AddWithValue("@ImagenPers", p.Imagen);
-                //ver el resto de los atributos falta realaciones con raza clase y habilidad especial 
                 Connection.Open();
                 result = Comando.ExecuteNonQuery();
             }

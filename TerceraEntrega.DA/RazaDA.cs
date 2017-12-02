@@ -75,7 +75,7 @@ namespace TerceraEntrega.DA
                 List<Raza> retorno = new List<Raza>();
                 using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
                 {
-                    string query = "SELECT Id,Nombre, Descripcion FROM Raza";
+                    string query = "SELECT Id, Nombre, Descripcion FROM Raza";
                     SqlCommand Comando = new SqlCommand(query, Connection);
                     Connection.Open();
                     SqlDataReader reader = Comando.ExecuteReader();

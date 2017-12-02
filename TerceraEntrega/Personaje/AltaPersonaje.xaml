@@ -72,8 +72,6 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <ComboBox HorizontalAlignment="Left" Height="20" Margin="225,109,0,0" Grid.Row="1" VerticalAlignment="Top" Width="185" IsEditable="True" Text="Seleccione la Raza" />
-        <ComboBox HorizontalAlignment="Left" Height="20" Margin="225,143,0,0" Grid.Row="1" VerticalAlignment="Top" Width="185" IsEditable="True" Text="Seleccione la Clase" />
         <Button Content="Examinar" HorizontalAlignment="Left" Height="18" Margin="607,155,0,0" Grid.Row="1" VerticalAlignment="Top" Width="114" Click="Button_Click_1"/>
         <TextBox HorizontalAlignment="Left" Height="18" Margin="442,155,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Archivo Seleccionado" Name ="ArchivoSelect" VerticalAlignment="Top" Width="165" />
         <Image HorizontalAlignment="Left" Height="135" Margin="485,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="204" Name ="Foto"/>
@@ -97,6 +95,7 @@
         <Button Content="Cargar" HorizontalAlignment="Left" Height="36" Margin="698,78,0,0" Grid.Row="2" VerticalAlignment="Top" Width="98" Click="Button_Click" />
         <Button Content="Volver" HorizontalAlignment="Left" Height="36" Margin="553,78,0,0" Grid.Row="2" VerticalAlignment="Top" Width="102" Click="Button_Click_2"/>
         <TextBlock HorizontalAlignment="Left" Height="32" Margin="23,109,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Name ="Message" Width="445"/>
-
+        <ComboBox Name ="CboRaza" Text="{Binding Nombre}" HorizontalAlignment="Left" Height="21" Margin="225,115,0,0" Grid.Row="1" VerticalAlignment="Top" Width="185" SelectionChanged="tata"/>
+        <ComboBox Name ="CboClase" Text="{Binding Nombre}" HorizontalAlignment="Left" Height="21" Margin="225,141,0,0" Grid.Row="1" VerticalAlignment="Top" Width="185" SelectionChanged="ComboClase"/>
     </Grid>
 </Page>
