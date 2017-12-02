@@ -31,8 +31,7 @@
             <Button Content="Listar" Width="110" Click="Button_Click_3"/>
         </ComboBox>
         <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="148" Margin="648,10,0,0" IsEditable="True" Text="CaracteristicaVariable">
-            <Button Content="Crear" Width="110"/>
-            <Button Content="Listar" Height="20" Width="110"/>
+            <Button Content="Manejador CV" Width="138" Click ="btoManejadorCarVariable"/>
         </ComboBox>
     </Grid>
 </Page>

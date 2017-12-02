@@ -54,6 +54,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CVariable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="HabilidadEspecial\AltaHE.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,6 +82,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="CVariable.xaml.cs">
+      <DependentUpon>CVariable.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HabilidadEspecial\AltaHE.xaml.cs">
       <DependentUpon>AltaHE.xaml</DependentUpon>
     </Compile>
@@ -146,6 +153,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="CaracteristicaVariable\" />
     <Folder Include="Clase\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

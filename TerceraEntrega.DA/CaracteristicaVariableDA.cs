@@ -17,11 +17,9 @@ namespace TerceraEntrega.DA
             {
                 string query = "INSERT INTO CaracteristicaVariable (Nombre) OUTPUT INSERTED.ID VALUES (@Nombre)";
                 SqlCommand Comando = new SqlCommand(query, Connection);
-                Comando.Parameters.AddWithValue("@Nombre", caracteristica.nombre);
-
-
+                Comando.Parameters.AddWithValue("@Nombre", caracteristica.Nombre);
                 Connection.Open();
-                result = (int)Comando.ExecuteScalar();
+                result = Comando.ExecuteNonQuery();
             }
 
             foreach (Personaje personaje in PersonajeDA.Listar())
@@ -29,20 +27,17 @@ namespace TerceraEntrega.DA
 
                 using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
                 {
-                    string query = "INSERT INTO PersonajeCaracterisitica (IdPER, IdCAR, Valor) VALUES (@IdPER, @IdCAR, @Valor)";
+                    string query = "INSERT INTO PersonajeCaracteristica (IdPer, IdCar, Valor) VALUES (@IdPER, @IdCAR, @Valor)";
                     SqlCommand Comando = new SqlCommand(query, Connection);
                     Comando.Parameters.AddWithValue("@IdPER", personaje.Id);
-                    Comando.Parameters.AddWithValue("@IdCAR", result);
+                    Comando.Parameters.AddWithValue("@IdCAR", caracteristica.Id);
                     Comando.Parameters.AddWithValue("@Valor", 1);
                     Connection.Open();
-                    result = Comando.ExecuteNonQuery();
                 }
 
             }
-
-
-
             return result;
+
         }
 
         public static int Modificar(CaracteristicaVariable caracteristica)
@@ -52,7 +47,7 @@ namespace TerceraEntrega.DA
             {
                 string query = "UPDATE CaracteristicaVariable SET Nombre= @Nombre WHERE Id= @Id";
                 SqlCommand Comando = new SqlCommand(query, Connection);
-                Comando.Parameters.AddWithValue("@Nombre", caracteristica.nombre);
+                Comando.Parameters.AddWithValue("@Nombre", caracteristica.Nombre);
                 Comando.Parameters.AddWithValue("@Id", caracteristica.Id);
                 Connection.Open();
                 result = Comando.ExecuteNonQuery();
@@ -75,7 +70,7 @@ namespace TerceraEntrega.DA
                 {
                     retorno = new CaracteristicaVariable();
                     retorno.Id = (int)reader["Id"];
-                    retorno.nombre = reader["Nombre"].ToString();
+                    retorno.Nombre = reader["Nombre"].ToString();
 
                 }
 
@@ -100,7 +95,7 @@ namespace TerceraEntrega.DA
                     }
                     CaracteristicaVariable caracteristica = new CaracteristicaVariable();
                     caracteristica.Id = (int)reader["Id"];
-                    caracteristica.nombre = reader["Nombre"].ToString();
+                    caracteristica.Nombre = reader["Nombre"].ToString();
 
                     retorno.Add(caracteristica);
                 }
@@ -138,7 +133,7 @@ namespace TerceraEntrega.DA
                 {
                     retorno = new CaracteristicaVariable();
                     retorno.Id = (int)reader["Id"];
-                    retorno.nombre = reader["Nombre"].ToString();
+                    retorno.Nombre = reader["Nombre"].ToString();
 
                 }
 

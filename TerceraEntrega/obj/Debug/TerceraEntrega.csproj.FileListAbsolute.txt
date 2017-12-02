@@ -54,3 +54,5 @@ C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Perso
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Raza\AltaRaza.baml
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Personaje\PerCaracteristica.g.cs
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Personaje\PerCaracteristica.baml
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\CVariable.g.cs
+C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\CVariable.baml

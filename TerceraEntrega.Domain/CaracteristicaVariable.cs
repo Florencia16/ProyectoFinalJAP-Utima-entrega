@@ -9,10 +9,10 @@ namespace TerceraEntrega.Domain
     public class CaracteristicaVariable
     {
         public int Id;
-        public String nombre;
+        public String Nombre;
         public override string ToString()
         {
-            return this.nombre;
+            return this.Nombre;
         }
     }
 }

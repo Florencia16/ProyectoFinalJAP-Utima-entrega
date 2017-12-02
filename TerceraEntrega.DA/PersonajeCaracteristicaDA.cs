@@ -20,8 +20,6 @@ namespace TerceraEntrega.DA
                 Comando.Parameters.AddWithValue("@IDCAR", IdeCar);
                 Comando.Parameters.AddWithValue("@VALOR", valor);
                 Connection.Open();
-                Comando.ExecuteNonQuery();
-
             }
         }
 
@@ -63,7 +61,7 @@ namespace TerceraEntrega.DA
         {
             using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
             {
-                string query = "UPDATE PersonajeCaracterisitica SET IdPER= @IdPER, IdCAR = @IdCAR, Valor = @Valor WHERE IdPER= @IdPER AND IdCAR = @IdCAR";
+                string query = "UPDATE PersonajeCaracteristica SET IdPer= @IdPER, IdCar = @IdCAR, Valor = @Valor WHERE IdPER= @IdPER AND IdCAR = @IdCAR";
                 SqlCommand Comando = new SqlCommand(query, Connection);
                 Comando.Parameters.AddWithValue("@IdPER", elPersonajeCaracteristica.Personaje.Id);
                 Comando.Parameters.AddWithValue("@IdCAR", elPersonajeCaracteristica.CaracteristicaVariable.Id);

@@ -12,9 +12,9 @@ namespace TerceraEntrega.BL
     {
         public static int Crear(CaracteristicaVariable caracteristica)
         {
-            int retorno = -1;
-            retorno = CaracteristicaVariableDA.Crear(caracteristica);
-            return retorno;
+            int result = -1;
+            result = CaracteristicaVariableDA.Crear(caracteristica);
+            return result; 
         }
 
         public static CaracteristicaVariable Obtener(int id)

@@ -15,7 +15,7 @@ namespace TerceraEntrega.BL
             PersonajeCaracteristicaDA.Crear( IdP,  IdC,  valor);
 
         }
-        public static void modificar(PersonajeCaracteristica personajeCaracteristica)
+        public static void Modificar(PersonajeCaracteristica personajeCaracteristica)
         {
             PersonajeCaracteristicaDA.Modificar(personajeCaracteristica);
 

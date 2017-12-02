@@ -54,5 +54,10 @@ namespace TerceraEntrega
             this.NavigationService.Navigate(new AltaPersonaje());
 
         }
+
+        private void btoManejadorCarVariable(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new CVariable());
+        }
     }
 }

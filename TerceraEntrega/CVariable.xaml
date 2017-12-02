@@ -1,0 +1,27 @@
+﻿<Page x:Class="TerceraEntrega.CVariable"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TerceraEntrega"
+      mc:Ignorable="d"
+      Title="CVariable" Height="403.226" Width="491.935">
+    <Grid Margin="0,0,-164,-85">
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" TextWrapping="Wrap" Text="Manejado de Caracteristicas Variables" VerticalAlignment="Top" Width="368" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Ingrese nombre" HorizontalAlignment="Left" Height="26" Margin="10,58,0,0" VerticalAlignment="Top" Width="104"/>
+        <TextBox Name ="NombreTxt" HorizontalAlignment="Left" Height="26" Margin="119,58,0,0" TextWrapping="Wrap" Text="{Binding Nombre}" VerticalAlignment="Top" Width="200"/>
+        <Button Content="Crear" HorizontalAlignment="Left" Height="22" Margin="342,118,0,0" VerticalAlignment="Top" Width="82" Click="btoCrear"/>
+        <Button Content="Modificar" HorizontalAlignment="Left" Height="24" Margin="342,161,0,0" VerticalAlignment="Top" Width="82" Click="btoModificar"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" Height="29" Margin="342,208,0,0" VerticalAlignment="Top" Width="82" Click="btoEliminar"/>
+        <ListView Name ="ListCVariable" HorizontalAlignment="Left" Height="214" Margin="24,105,0,0" VerticalAlignment="Top" Width="295" SelectionChanged="ListCVariable_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Volver a Pagina Principal" HorizontalAlignment="Left" Height="35" Margin="297,337,0,0" VerticalAlignment="Top" Width="146" Click="Volver"/>
+
+    </Grid>
+</Page>
+
