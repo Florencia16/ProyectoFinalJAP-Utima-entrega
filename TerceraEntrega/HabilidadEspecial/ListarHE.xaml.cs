@@ -25,20 +25,10 @@ namespace TerceraEntrega
         public ListarHE()
         {
             InitializeComponent();
-            
-            
+            //ListarHE.ItemsSource = HabilidadEspecialBL.Listar(); 
         }
 
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            List<HabilidadEspecial> HE = new List<HabilidadEspecial>();
-            HE = HabilidadEspecialBL.Listar();
-            foreach(HabilidadEspecial h in HE)
-            {
-                this.ListHE.Items.Add(h); 
-            }
-
-        }
+       
     }
 
 }
