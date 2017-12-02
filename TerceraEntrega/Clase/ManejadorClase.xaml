@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TerceraEntrega"
       mc:Ignorable="d"
-      Title="ManejadorClase" Width="679.032" Height="395.161">
+      Title="ManejadorClase" Width="679.032" Height="458.684">
 
     <Grid>
         <Label Content="Manejador de Clases" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="248" FontSize="16" FontWeight="Bold"/>
@@ -20,11 +20,9 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="Crear" HorizontalAlignment="Left" Height="32" Margin="521,52,0,0" VerticalAlignment="Top" Width="116" Click="btoCargar"/>
-        <Button Content="Modificar" HorizontalAlignment="Left" Height="33" Margin="521,103,0,0" VerticalAlignment="Top" Width="116" Click="btoModificar"/>
-        <Button Content="Elminar" HorizontalAlignment="Left" Height="37" Margin="521,152,0,0" VerticalAlignment="Top" Width="116" Click="btoEliminar"/>
-        <Button Content="Agregar HE" HorizontalAlignment="Left" Height="33" Margin="521,242,0,0" VerticalAlignment="Top" Width="116" Click="btoAgHE"/>
-        <Button Content="Quitar HE" HorizontalAlignment="Left" Height="33" Margin="521,297,0,0" VerticalAlignment="Top" Width="116" Click="btoQuiHE"/>
-        <Button Content="Volver a la Pagina Principal" HorizontalAlignment="Left" Height="33" Margin="494,352,0,0" VerticalAlignment="Top" Width="156" Click="btoVolver"/>
+        <Button Content="Crear" HorizontalAlignment="Left" Height="32" Margin="521,131,0,0" VerticalAlignment="Top" Width="116" Click="btoCargar"/>
+        <Button Content="Modificar" HorizontalAlignment="Left" Height="33" Margin="521,197,0,0" VerticalAlignment="Top" Width="116" Click="btoModificar"/>
+        <Button Content="Elminar" HorizontalAlignment="Left" Height="37" Margin="521,269,0,0" VerticalAlignment="Top" Width="116" Click="btoEliminar"/>
+        <Button Content="Volver a la Pagina Principal" HorizontalAlignment="Left" Height="33" Margin="481,407,0,0" VerticalAlignment="Top" Width="156" Click="btoVolver" RenderTransformOrigin="0.403,-3.961"/>
     </Grid>
 </Page>

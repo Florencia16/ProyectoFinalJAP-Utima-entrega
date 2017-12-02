@@ -124,7 +124,7 @@ namespace TerceraEntrega.DA
                     retorno.Id = (int)reader["Id"];
                     retorno.Nombre = reader["Nombre"].ToString();
                     retorno.Descripcion = reader["Descripcion"].ToString();
-                    retorno.HabilidadesEspeciales = HabilidadEspecialDA.obtenerHabilidadesEspecialesDeClase(retorno.Id);
+                    retorno.HabilidadesEspeciales = HabilidadEspecialDA.obtenerHabilidadesEspecialesDeClase(retorno);
                 }
 
             }

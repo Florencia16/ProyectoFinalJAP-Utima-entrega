@@ -105,12 +105,12 @@ namespace TerceraEntrega.DA
             return result;
         }
 
-        public static List<HabilidadEspecial> obtenerHabilidadesEspecialesDeClase(int idClase)
+        public static List<HabilidadEspecial> obtenerHabilidadesEspecialesDeClase(int IdClas)
         {
             List<HabilidadEspecial> retorno = new List<HabilidadEspecial>();
             using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
             {
-                string query = "SELECT he.* FROM HabilidadEspecial he, ClaseHabilidadEspecial che WHERE he.Id = che.IdHe AND che.IdClas = " + idClase;
+                string query = "SELECT he.* FROM HabilidadEspecial he, ClaseHabilidadEspecial che WHERE he.Id = che.IdHe AND che.IdClas = " + IdClas;
                 SqlCommand Comando = new SqlCommand(query, Connection);
                 Connection.Open();
                 SqlDataReader reader = Comando.ExecuteReader();
@@ -156,5 +156,9 @@ namespace TerceraEntrega.DA
             }
             return retorno;
         }
+
+
+
+
     }
 }

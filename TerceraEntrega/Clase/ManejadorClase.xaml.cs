@@ -26,7 +26,9 @@ namespace TerceraEntrega
         {
             InitializeComponent();
             ListClase.ItemsSource = ClaseBL.Listar();
+
         }
+            
        
         private void ListClase_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -114,14 +116,6 @@ namespace TerceraEntrega
             this.NavigationService.GoBack();
         }
 
-        private void btoAgHE(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btoQuiHE(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
     }
 }

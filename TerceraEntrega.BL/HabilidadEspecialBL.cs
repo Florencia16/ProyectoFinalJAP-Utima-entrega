@@ -44,6 +44,8 @@ namespace TerceraEntrega.BL
             retorno = HabilidadEspecialDA.Eliminar(HE);
             return retorno;
         }
+       
+
 
     }
 }
