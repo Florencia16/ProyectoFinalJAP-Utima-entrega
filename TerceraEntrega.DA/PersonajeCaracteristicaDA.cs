@@ -10,6 +10,39 @@ namespace TerceraEntrega.DA
 {
     public class PersonajeCaracteristicaDA : Conectar
     {
+        public static void Crear(int IdePer, int IdeCar, int valor)
+        {
+            using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
+            {
+                string query = "INSERT INTO IdePer, IdeCAR, Valor VALUES @IDPER, @IDCAR, @VALOR";
+                SqlCommand Comando = new SqlCommand(query, Connection);
+                Comando.Parameters.AddWithValue("@IdPER", IdePer);
+                Comando.Parameters.AddWithValue("@IDCAR", IdeCar);
+                Comando.Parameters.AddWithValue("@VALOR", valor);
+                Connection.Open();
+              
+            }
+        }
+
+        public static List<PersonajeCaracteristica> Listar()
+        {
+
+            List<PersonajeCaracteristica> retorno = null;
+
+            return retorno;
+        }
+        public static void Obtener(PersonajeCaracteristica elPersonajeCaracteristica)
+        {
+            //personajeCaracteristica.Id = contadorId++;
+            //          Datos.personajesCaracteristicas.Add(personajeCaracteristica);
+        }
+
+        public static void Eliminar(PersonajeCaracteristica elPersonajeCaracteristica)
+        {
+            //personajeCaracteristica.Id = contadorId++;
+            //          Datos.personajesCaracteristicas.Add(personajeCaracteristica);
+        }
+
         public static void Modificar(PersonajeCaracteristica elPersonajeCaracteristica)
         {
             using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))

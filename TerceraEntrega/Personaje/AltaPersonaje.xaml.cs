@@ -115,7 +115,8 @@ namespace TerceraEntrega
                 int newPersonaje = PersonajeBL.Crear(p,c,r );
                 if (newPersonaje > 0)
                 {
-                   SetClientMessage("Personaje agregado correctamente!", TipoMensaje.Correcto);
+                    SetClientMessage("Personaje agregado correctamente!", TipoMensaje.Correcto);
+                    this.NavigationService.Navigate(new PerCaracteristica()); 
                    
                 }
 

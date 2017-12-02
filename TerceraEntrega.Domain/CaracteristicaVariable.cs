@@ -10,5 +10,9 @@ namespace TerceraEntrega.Domain
     {
         public int Id;
         public String nombre;
+        public override string ToString()
+        {
+            return this.nombre;
+        }
     }
 }
