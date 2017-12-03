@@ -26,7 +26,11 @@ namespace TerceraEntrega
         {
             InitializeComponent();
             ListRaza.ItemsSource = RazaBL.Listar();
+
+            cboCV.ItemsSource = CaracteristicaVariableBL.Listar();
+            cboCV.SelectedValuePath = "Id";
         }
+        Raza laRaza = new Raza();
 
         private void ListRaza_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -35,6 +39,7 @@ namespace TerceraEntrega
 
         private void btoCargar(object sender, RoutedEventArgs e)
         {
+            int bonus = -1;
             try
             {
                 if (string.IsNullOrEmpty(this.NomTxt.Text))
@@ -45,14 +50,15 @@ namespace TerceraEntrega
                 {
                     throw new Exception("Debe especificar una Descripción para la Raza");
                 }
-                if (string.IsNullOrEmpty(this.BonusTxt.Text))
+                if (!int.TryParse(this.BonusTxt.Text, out bonus) && bonus > 0 && bonus < 5)
                 {
-                    throw new Exception("Debe especificar un Valor de Bonus para la Raza");
+                    throw new Exception("El valor de Bonus especificado no es válido.");
                 }
-                Raza laRaza = new Raza();
+
                 laRaza.nombre = NomTxt.Text;
                 laRaza.Descripcion = DesTxt.Text;
-                laRaza.Bonus = Convert.ToInt32(BonusTxt.Text);
+                laRaza.Bonus = bonus;
+
                 int newRaza = RazaBL.Crear(laRaza);
                 if (newRaza > 0)
                 {

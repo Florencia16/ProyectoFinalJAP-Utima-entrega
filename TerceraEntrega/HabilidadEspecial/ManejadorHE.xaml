@@ -16,7 +16,9 @@
         <ListView Name="ListHE" HorizontalAlignment="Left" Height="214" Margin="34,220,0,0" VerticalAlignment="Top" Width="219" SelectionChanged="ListHE_SelectionChanged">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn/>
+                    <GridViewColumn>
+                        <TextBlock Text="Nombre" Height="16" Width="122" />
+                    </GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>

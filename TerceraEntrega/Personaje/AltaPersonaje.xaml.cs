@@ -68,33 +68,41 @@ namespace TerceraEntrega
                 {
                     throw new Exception("Debe especificar un nombre para el personaje");
                 }
-                if (!int.TryParse(this.NivelTxt.Text, out Nivel) && Nivel > 0)
+                if (!int.TryParse(this.NivelTxt.Text, out Nivel) && Nivel > 0 && Nivel <10)
                 {
                     throw new Exception("El nivel especificado no es válido.");
                 }
-                if (!int.TryParse(this.FueTxt.Text, out Fuerza) && Fuerza > 0)
+                if (!int.TryParse(this.FueTxt.Text, out Fuerza) && Fuerza > 0 && Fuerza <10)
                 {
                     throw new Exception("El valor de Fuerza especificado no es válido.");
                 }
-                if (!int.TryParse(this.DesTXT.Text, out Destreza) && Destreza > 0)
+                if (!int.TryParse(this.DesTXT.Text, out Destreza) && Destreza > 0 && Destreza < 10)
                 {
                     throw new Exception("El valor de Destreza especificado no es válido.");
                 }
-                if (!int.TryParse(this.ConstTxt.Text, out Constitucion) && Constitucion > 0)
+                if (!int.TryParse(this.ConstTxt.Text, out Constitucion) && Constitucion > 0 && Constitucion < 10)
                 {
                     throw new Exception("El valor de Constitución especificado no es válido.");
                 }
-                if (!int.TryParse(this.InteTxt.Text, out Inteligencia) && Inteligencia > 0)
+                if (!int.TryParse(this.InteTxt.Text, out Inteligencia) && Inteligencia > 0 && Inteligencia < 10)
                 {
                     throw new Exception("El valor de Inteligencia especificado no es válido.");
                 }
-                if (!int.TryParse(this.SabTxt.Text, out Sabiduria) && Sabiduria > 0)
+                if (!int.TryParse(this.SabTxt.Text, out Sabiduria) && Sabiduria > 0 && Sabiduria < 10)
                 {
                     throw new Exception("El valor de Sabiduria especificado no es válido.");
                 }
-                if (!int.TryParse(this.CarTxt.Text, out Carisma) && Carisma > 0)
+                if (!int.TryParse(this.CarTxt.Text, out Carisma) && Carisma > 0 && Carisma < 10)
                 {
                     throw new Exception("El valor de Carisma especificado no es válido.");
+                }
+                if (r == null)
+                {
+                    throw new Exception("Debe Seleccionar una Raza al Personaje");
+                }
+                if (c == null)
+                {
+                    throw new Exception("Debe Seleccionar una Clase al Personaje");
                 }
 
 

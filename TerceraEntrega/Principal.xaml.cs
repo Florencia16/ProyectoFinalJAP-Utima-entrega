@@ -24,11 +24,7 @@ namespace TerceraEntrega
         {
             InitializeComponent();
         }
-
-
-       
-        
-        
+               
 
         private void btoAltaPersonaje(object sender, RoutedEventArgs e)
         {
@@ -54,6 +50,11 @@ namespace TerceraEntrega
         private void btoManejadorHE(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new ManejadorHE());
+        }
+
+        private void btoListarPersonaje(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
