@@ -82,6 +82,7 @@ namespace TerceraEntrega
 
         private void btoModificar(object sender, RoutedEventArgs e)
         {
+            int bonus = -1;
 
             try
             {
@@ -93,14 +94,15 @@ namespace TerceraEntrega
                 {
                     throw new Exception("Debe especificar una Descripción para la Raza");
                 }
-                if (string.IsNullOrEmpty(this.BonusTxt.Text))
-                {
-                    throw new Exception("Debe especificar un Valor de Bonus para la Raza");
+                if (!int.TryParse(this.BonusTxt.Text, out bonus) && bonus > 0 && bonus < 5)
+                    {
+                    throw new Exception("Debe especificar un Valor de Bonus para la Raza entre 1 y 5");
                 }
                 Raza SelectItem = (Raza)ListRaza.SelectedItem;
                 SelectItem.nombre = NomTxt.Text;
                 SelectItem.Descripcion = DesTxt.Text;
-                SelectItem.Bonus = Convert.ToInt32(BonusTxt.Text);
+                SelectItem.Bonus = bonus;
+                SelectItem.CaracteristicaVariable = Car; 
                 int modRaza = RazaBL.Modificar(SelectItem);
                 if (modRaza > 0)
                 {

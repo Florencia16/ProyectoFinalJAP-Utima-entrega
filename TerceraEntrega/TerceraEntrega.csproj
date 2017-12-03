@@ -74,10 +74,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Personaje\ElementoListaPersonaje.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Personaje\AltaPersonaje.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -100,9 +96,6 @@
     </Compile>
     <Compile Include="Personaje\PerCaracteristica.xaml.cs">
       <DependentUpon>PerCaracteristica.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Personaje\ElementoListaPersonaje.xaml.cs">
-      <DependentUpon>ElementoListaPersonaje.xaml</DependentUpon>
     </Compile>
     <Compile Include="Personaje\AltaPersonaje.xaml.cs">
       <DependentUpon>AltaPersonaje.xaml</DependentUpon>

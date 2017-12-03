@@ -44,9 +44,7 @@ C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Terce
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\TerceraEntrega.csproj.GenerateResource.Cache
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Principal.g.cs
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Principal.baml
-C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Personaje\ElementoListaPersonaje.g.cs
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Personaje\AltaPersonaje.g.cs
-C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Personaje\ElementoListaPersonaje.baml
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Personaje\AltaPersonaje.baml
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Personaje\PerCaracteristica.g.cs
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Personaje\PerCaracteristica.baml

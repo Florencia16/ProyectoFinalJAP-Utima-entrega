@@ -27,9 +27,12 @@ namespace TerceraEntrega
             InitializeComponent();
             ListClase.ItemsSource = ClaseBL.Listar();
 
+            CboHE.ItemsSource = HabilidadEspecialBL.Listar();
+            CboHE.SelectedValuePath = "Id";
+
         }
-            
-       
+
+        HabilidadEspecial HEaux = new HabilidadEspecial(); 
         private void ListClase_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
@@ -116,6 +119,32 @@ namespace TerceraEntrega
             this.NavigationService.GoBack();
         }
 
-       
+        private void CboHabEspeciales(object sender, SelectionChangedEventArgs e)
+        {
+            int selectIndex = CboHE.SelectedIndex;
+            HEaux = (HabilidadEspecial)CboHE.SelectedItem;
+        }
+
+        private void btoAgreHE(object sender, RoutedEventArgs e)
+        {
+            Clase SelectItem = (Clase)ListClase.SelectedItem;
+            try
+            {
+                if (HEaux == null)
+                {
+                    throw new Exception("Debe elegir una HE para la Clase Seleccionada");
+                }
+                if (SelectItem == null)
+                {
+                    throw new Exception("Debe elegir una Clase para agregar una nueva Habilidad Especial");
+                }
+                ClaseBL.agregarHabilidadEspecialAClase(HEaux, SelectItem);
+                MessageBox.Show("Se ha ingresado correctamente la Habilidad a la Clase " +SelectItem.Nombre, "Correcto");               
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Errorr");
+            }
+        }
     }
 }

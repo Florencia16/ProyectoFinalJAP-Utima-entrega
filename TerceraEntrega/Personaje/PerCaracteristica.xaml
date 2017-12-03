@@ -6,10 +6,10 @@
       xmlns:local="clr-namespace:TerceraEntrega"
       mc:Ignorable="d" 
       d:DesignHeight="300"
-      Title="PerCaracteristica" Width="500">
+      Title="PerCaracteristica" Width="523.377">
 
-    <Grid>
-        <Frame HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300"/>
+    <Grid Margin="0,0,168,0">
+        <Frame HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="399" Margin="0,0,-44,0"/>
         <TextBlock HorizontalAlignment="Left" Height="41" Margin="10,10,0,0" TextWrapping="Wrap" Text="Caracteristica" VerticalAlignment="Top" Width="175" FontSize="16" FontWeight="Bold"/>
         <ListView Name ="ListCaracteristica" HorizontalAlignment="Left" Height="165" Margin="10,56,0,0" VerticalAlignment="Top" Width="130" SelectionChanged="ListCaracteristica_SelectionChanged">
             <ListView.View>

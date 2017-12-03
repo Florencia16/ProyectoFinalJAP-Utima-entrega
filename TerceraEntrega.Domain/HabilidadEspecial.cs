@@ -11,5 +11,10 @@ namespace TerceraEntrega.Domain
         public int Id;
         public string Nombre;
         public string Descripcion;
+
+        public override string ToString()
+        {
+            return this.Nombre;
+        }
     }
 }
