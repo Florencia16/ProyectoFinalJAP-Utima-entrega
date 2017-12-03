@@ -98,8 +98,8 @@ namespace TerceraEntrega
 
                 Clase SelectItem = (Clase)ListClase.SelectedItem;
 
-                int modClase = ClaseBL.Eliminar(SelectItem);
-                if (modClase > 0)
+                int removeClase = ClaseBL.Eliminar(SelectItem);
+                if (removeClase > 0)
                 {
                     MessageBox.Show("Clase Eliminada Correctamente", "Correcto");
                 }

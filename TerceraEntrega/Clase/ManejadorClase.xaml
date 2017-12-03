@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TerceraEntrega"
       mc:Ignorable="d"
-      Title="ManejadorClase" Width="679.032" Height="458.684">
+      Title="ManejadorClase" Width="594.051" Height="458.684">
 
     <Grid>
         <Label Content="Manejador de Clases" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="248" FontSize="16" FontWeight="Bold"/>
@@ -13,16 +13,16 @@
         <Label Content="Descripción" HorizontalAlignment="Left" Height="35" Margin="27,89,0,0" VerticalAlignment="Top" Width="75"/>
         <TextBox HorizontalAlignment="Left" Height="29" Margin="131,55,0,0" TextWrapping="Wrap" Name="NomTxt" VerticalAlignment="Top" Width="166"/>
         <TextBox HorizontalAlignment="Left" Height="35" Margin="131,89,0,0" TextWrapping="Wrap" Name="DesTxt" VerticalAlignment="Top" Width="269"/>
-        <ListView Name ="ListClase" HorizontalAlignment="Left" Height="219" Margin="27,152,0,0" VerticalAlignment="Top" Width="446" SelectionChanged="ListClase_SelectionChanged">
+        <ListView Name ="ListClase" HorizontalAlignment="Left" Height="219" Margin="27,152,0,0" VerticalAlignment="Top" Width="270" SelectionChanged="ListClase_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="Crear" HorizontalAlignment="Left" Height="32" Margin="521,131,0,0" VerticalAlignment="Top" Width="116" Click="btoCargar"/>
-        <Button Content="Modificar" HorizontalAlignment="Left" Height="33" Margin="521,197,0,0" VerticalAlignment="Top" Width="116" Click="btoModificar"/>
-        <Button Content="Elminar" HorizontalAlignment="Left" Height="37" Margin="521,269,0,0" VerticalAlignment="Top" Width="116" Click="btoEliminar"/>
-        <Button Content="Volver a la Pagina Principal" HorizontalAlignment="Left" Height="33" Margin="481,407,0,0" VerticalAlignment="Top" Width="156" Click="btoVolver" RenderTransformOrigin="0.403,-3.961"/>
+        <Button Content="Crear" HorizontalAlignment="Left" Height="32" Margin="436,131,0,0" VerticalAlignment="Top" Width="116" Click="btoCargar"/>
+        <Button Content="Modificar" HorizontalAlignment="Left" Height="33" Margin="436,199,0,0" VerticalAlignment="Top" Width="116" Click="btoModificar"/>
+        <Button Content="Elminar" HorizontalAlignment="Left" Height="37" Margin="436,269,0,0" VerticalAlignment="Top" Width="116" Click="btoEliminar"/>
+        <Button Content="Volver a la Pagina Principal" HorizontalAlignment="Left" Height="33" Margin="396,390,0,0" VerticalAlignment="Top" Width="156" Click="btoVolver" RenderTransformOrigin="0.403,-3.961"/>
     </Grid>
 </Page>
