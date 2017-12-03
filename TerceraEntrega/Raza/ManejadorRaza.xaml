@@ -29,7 +29,7 @@
         <Label Content="Bonus" HorizontalAlignment="Left" Height="39" Margin="27,124,0,0" VerticalAlignment="Top" Width="75"/>
         <TextBox HorizontalAlignment="Left" Height="32" Margin="131,131,0,0" TextWrapping="Wrap" Name="BonusTxt" VerticalAlignment="Top" Width="166"/>
         <Label Content="Caracteristica Variable" HorizontalAlignment="Left" Height="42" Margin="27,168,0,0" VerticalAlignment="Top" Width="139"/>
-        <ComboBox Name ="cboCV" HorizontalAlignment="Left" Height="32" Margin="171,178,0,0" VerticalAlignment="Top" Width="185" />
+        <ComboBox Name ="cboCV" Text="{Binding Nombre}" HorizontalAlignment="Left" Height="32" Margin="171,178,0,0" VerticalAlignment="Top" Width="185" SelectionChanged="ComboCV"/>
 
     </Grid>
 </Page>

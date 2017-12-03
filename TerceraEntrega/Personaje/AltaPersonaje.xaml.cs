@@ -49,6 +49,7 @@ namespace TerceraEntrega
             CboClase.ItemsSource = ClaseBL.Listar();
             CboClase.SelectedValuePath = "Id";
             
+            
         }
 
         private void btoCargar(object sender, RoutedEventArgs e)

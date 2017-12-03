@@ -30,7 +30,9 @@ namespace TerceraEntrega
             cboCV.ItemsSource = CaracteristicaVariableBL.Listar();
             cboCV.SelectedValuePath = "Id";
         }
+
         Raza laRaza = new Raza();
+        CaracteristicaVariable Car = new CaracteristicaVariable();
 
         private void ListRaza_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -54,10 +56,15 @@ namespace TerceraEntrega
                 {
                     throw new Exception("El valor de Bonus especificado no es válido.");
                 }
+                if (Car == null)
+                {
+                    throw new Exception("Debe ingresar una Caracteristica Variable");
+                }
 
                 laRaza.nombre = NomTxt.Text;
                 laRaza.Descripcion = DesTxt.Text;
                 laRaza.Bonus = bonus;
+                laRaza.CaracteristicaVariable = Car;
 
                 int newRaza = RazaBL.Crear(laRaza);
                 if (newRaza > 0)
@@ -107,6 +114,7 @@ namespace TerceraEntrega
             ListRaza.ItemsSource = RazaBL.Listar();
         }
 
+
         private void btoEliminar(object sender, RoutedEventArgs e)
         {
             try
@@ -131,6 +139,14 @@ namespace TerceraEntrega
         private void btoVolver(object sender, RoutedEventArgs e)
         {
             this.NavigationService.GoBack();
+        }
+
+        private void ComboCV(object sender, SelectionChangedEventArgs e)
+        {
+            int PosCombo = cboCV.SelectedIndex;
+            Car = (CaracteristicaVariable)cboCV.SelectedItem;
+          
+
         }
     }
 }
