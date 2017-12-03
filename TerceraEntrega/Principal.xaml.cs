@@ -26,30 +26,11 @@ namespace TerceraEntrega
         }
 
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new AltaRaza());
+       
+        
+        
 
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            //this.NavigationService.Navigate(new ListarHE());
-
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new AltaHE());
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-           // this.NavigationService.Navigate(new ListarHE());
-
-        }
-
-        private void Button_Click_4(object sender, RoutedEventArgs e)
+        private void btoAltaPersonaje(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new AltaPersonaje());
 
@@ -63,6 +44,16 @@ namespace TerceraEntrega
         private void btoManejadorClase(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new ManejadorClase());
+        }
+
+        private void btoManejadorRaza(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ManejadorRaza());
+        }
+
+        private void btoManejadorHE(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ManejadorHE());
         }
     }
 }

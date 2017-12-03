@@ -15,19 +15,17 @@
                     <GradientStop Color="#FFF92B21" Offset="1"/>
                 </LinearGradientBrush>
             </ComboBox.Background>
-            <Button Content="Crear" Width="110" Click="Button_Click_4"/>
-            <Button Content="Listar" Height="22" Width="110"/>
+            <Button Content="Crear" Width="110" Click="btoAltaPersonaje"/>
+            <Button Content="Listar" Height="22" Width="110" Click="btoListarPersonaje"/>
         </ComboBox>
         <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="156,10,0,0" Text="Raza" IsEditable="True">
-            <Button Content="Crear" Height="23" Width="110" Click="Button_Click"/>
-            <Button Content="Listar" Height="18" Width="110" Click="Button_Click_1"/>
+            <Button Content="Manejador Raza" Height="23" Width="110" Click="btoManejadorRaza"/>
         </ComboBox>
         <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="316,10,0,0" IsEditable="True" Text="Clase" Height="22">
             <Button Content="ManejadorClase" Width="110" Click="btoManejadorClase"/>
         </ComboBox>
         <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="480,10,0,0" Text="HabilidadEspecial" IsEditable="True">
-            <Button Content="Crear" Height="20" Width="110" Click="Button_Click_2"/>
-            <Button Content="Listar" Width="110" Click="Button_Click_3"/>
+            <Button Content="Manejador HE" Height="20" Width="110" Click="btoManejadorHE"/>
         </ComboBox>
         <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="148" Margin="648,10,0,0" IsEditable="True" Text="CaracteristicaVariable">
             <Button Content="Manejador CV" Width="138" Click ="btoManejadorCarVariable"/>
