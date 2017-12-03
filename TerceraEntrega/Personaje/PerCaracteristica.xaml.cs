@@ -88,6 +88,10 @@ namespace TerceraEntrega
 
         }
 
+        private void btoVolver(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.GoBack();
+        }
     }
 
 }

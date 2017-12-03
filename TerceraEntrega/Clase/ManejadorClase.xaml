@@ -26,7 +26,7 @@
         <Button Content="Modificar" HorizontalAlignment="Left" Height="33" Margin="436,199,0,0" VerticalAlignment="Top" Width="116" Click="btoModificar"/>
         <Button Content="Elminar" HorizontalAlignment="Left" Height="37" Margin="436,269,0,0" VerticalAlignment="Top" Width="116" Click="btoEliminar"/>
         <Button Content="Volver a la Pagina Principal" HorizontalAlignment="Left" Height="33" Margin="396,390,0,0" VerticalAlignment="Top" Width="156" Click="btoVolver" RenderTransformOrigin="0.403,-3.961"/>
-        <ComboBox Name ="CboHE" Text="{Binding Nombre}" HorizontalAlignment="Left" Height="24" Margin="40,361,0,0" VerticalAlignment="Top" Width="179" SelectionChanged="CboHabEspeciales"/>
-        <Button Content="AgrHE" HorizontalAlignment="Left" Height="17" Margin="259,368,0,0" VerticalAlignment="Top" Width="100" Click="btoAgreHE"/>
+        <ComboBox Name ="CboHE" Text="{Binding Nombre}" HorizontalAlignment="Left" Height="26" Margin="40,361,0,0" VerticalAlignment="Top" Width="179" SelectionChanged="CboHabEspeciales"/>
+        <Button Content="AgrHE" HorizontalAlignment="Left" Height="24" Margin="259,361,0,0" VerticalAlignment="Top" Width="100" Click="btoAgreHE"/>
     </Grid>
 </Page>

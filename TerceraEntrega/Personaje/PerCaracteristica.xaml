@@ -8,10 +8,10 @@
       d:DesignHeight="300"
       Title="PerCaracteristica" Width="523.377">
 
-    <Grid Margin="0,0,168,0">
-        <Frame HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="399" Margin="0,0,-44,0"/>
+    <Grid Margin="0,0,104,0">
+        <Frame Height="300" VerticalAlignment="Top" HorizontalAlignment="Left" Width="409"/>
         <TextBlock HorizontalAlignment="Left" Height="41" Margin="10,10,0,0" TextWrapping="Wrap" Text="Caracteristica" VerticalAlignment="Top" Width="175" FontSize="16" FontWeight="Bold"/>
-        <ListView Name ="ListCaracteristica" HorizontalAlignment="Left" Height="165" Margin="10,56,0,0" VerticalAlignment="Top" Width="130" SelectionChanged="ListCaracteristica_SelectionChanged">
+        <ListView Name ="ListCaracteristica" HorizontalAlignment="Left" Height="130" Margin="10,56,0,0" VerticalAlignment="Top" Width="130" SelectionChanged="ListCaracteristica_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn>
@@ -20,8 +20,9 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <TextBox Name ="ValorTxt" HorizontalAlignment="Left" Height="21" Margin="114,241,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="71"/>
-        <TextBlock HorizontalAlignment="Left" Height="36" Margin="10,241,0,0" TextWrapping="Wrap" Text="Ingrese el valor" VerticalAlignment="Top" Width="99"/>
-        <Button Name="btoCargar" Content="Cargar" HorizontalAlignment="Left" Height="21" Margin="210,241,0,0" VerticalAlignment="Top" Width="80" Click="btoCargar_Click"/>
+        <TextBox Name ="ValorTxt" HorizontalAlignment="Left" Height="21" Margin="114,206,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="71" RenderTransformOrigin="0.493,-1.43"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="10,208,0,0" TextWrapping="Wrap" Text="Ingrese el valor" VerticalAlignment="Top" Width="99"/>
+        <Button Name="btoCargar" Content="Cargar" HorizontalAlignment="Left" Height="21" Margin="210,206,0,0" VerticalAlignment="Top" Width="80" Click="btoCargar_Click" RenderTransformOrigin="-0.012,0.321"/>
+        <Button Content="Volver a la Pagina Principal" HorizontalAlignment="Left" Height="28" Margin="290,262,0,0" VerticalAlignment="Top" Width="119" Click="btoVolver"/>
     </Grid>
 </Page>
