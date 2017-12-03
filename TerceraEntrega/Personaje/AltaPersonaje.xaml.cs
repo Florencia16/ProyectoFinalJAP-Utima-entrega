@@ -51,7 +51,7 @@ namespace TerceraEntrega
             
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btoCargar(object sender, RoutedEventArgs e)
         {
             try
             {                              
@@ -146,7 +146,7 @@ namespace TerceraEntrega
             this.Message.Text = message;
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void btoExaminar(object sender, RoutedEventArgs e)
         {
             
             OpenFileDialog OD = new OpenFileDialog();
@@ -171,15 +171,14 @@ namespace TerceraEntrega
             fs.Read(imagen, 0, imagen.Length);
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void btoVolver(object sender, RoutedEventArgs e)
         {
             this.NavigationService.GoBack();
         }
 
-        private void tata(object sender, SelectionChangedEventArgs e)
+        private void ComboRaza(object sender, SelectionChangedEventArgs e)
         {
             int PosCombo = CboRaza.SelectedIndex; 
-            //obtiene la raza 
             r = (Raza)CboRaza.SelectedItem;           
         }
 
