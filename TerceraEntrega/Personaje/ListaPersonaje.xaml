@@ -84,5 +84,6 @@
 				</DataTemplate>
 			</ListView.ItemTemplate>
 		</ListView>
+		<Button Content="Atras" Margin="0,0,10,10" Click="btoAtras" HorizontalAlignment="Right" Width="79" Height="22" VerticalAlignment="Bottom"/>
 	</Grid>
 </Page>

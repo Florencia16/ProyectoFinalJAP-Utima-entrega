@@ -22,12 +22,15 @@ namespace TerceraEntrega.Personaje
 	/// </summary>
 	public partial class SubirNivel : Page
 	{
+
+		TerceraEntrega.Domain.Personaje personaje;
+
 		public SubirNivel(int id)
 		{
 			InitializeComponent();
 
 
-			TerceraEntrega.Domain.Personaje personaje = PersonajeBL.Obtener(id);
+			personaje = PersonajeBL.Obtener(id);
 
 			List<PersonajeCaracteristica> caracteristicasPersonaje = PersonajeCaracteristicaBL.obtenerCaracteristicaPersonajesPorPersonaje(id);
 
@@ -57,11 +60,25 @@ namespace TerceraEntrega.Personaje
 			}
 
 			Lista2.ItemsSource = habilidadesEspecialesAMostrar;
+
+			if (((personaje.Nivel + 1) % 2 != 0) && ((personaje.Nivel + 1) != 1))
+			{
+				Lista.Visibility = Visibility.Hidden;
+			}
+
 		}
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			this.NavigationService.Navigate(new Principal());
+			CaracteristicaVariable SelectItem = (CaracteristicaVariable)Lista.SelectedItem;
+
+			HabilidadEspecial SelectItem2 = (HabilidadEspecial)Lista2.SelectedItem;
+
+			List<PersonajeCaracteristica> caracteristicasPersonaje = PersonajeCaracteristicaBL.obtenerCaracteristicaPersonajesPorPersonaje(personaje.Id);
+
+			PersonajeBL.SubirNivel(personaje, SelectItem2, (caracteristicasPersonaje!=null && caracteristicasPersonaje.Count>0 && SelectItem!=null) ? caracteristicasPersonaje.Find(x => x.CaracteristicaVariable.Id == SelectItem.Id):null);
+
+			this.NavigationService.Navigate(new ListaPersonaje());
 		}
 
 		private void Button_Click_1(object sender, RoutedEventArgs e)

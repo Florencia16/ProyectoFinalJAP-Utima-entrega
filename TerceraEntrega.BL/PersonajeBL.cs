@@ -48,7 +48,27 @@ namespace TerceraEntrega.BL
         {
             PersonajeDA.asignarHabilidadEspecialAPersonaje(habilidadEspecial, personaje);
         }
-    }
+
+
+		public static void SubirNivel(Personaje personaje, HabilidadEspecial habilidadEspecial, PersonajeCaracteristica item)
+		{
+			if (habilidadEspecial!=null) PersonajeBL.asignarHabilidadEspecialAPersonaje(habilidadEspecial, personaje);
+
+			if (((personaje.Nivel + 1) % 2 != 0) && ((personaje.Nivel + 1) != 1))
+			{
+				if (item != null) {
+					item.Valor++;
+					PersonajeCaracteristicaBL.Modificar(item);
+				}
+			}
+				
+			personaje.Nivel++;
+
+			PersonajeBL.Modificar(personaje, null, null);
+		}
+
+
+	}
 
 }
 

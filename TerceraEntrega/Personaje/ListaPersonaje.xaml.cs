@@ -102,5 +102,10 @@ namespace TerceraEntrega.Personaje
 			dataSource.Remove(viewModel);
 			view.Refresh();
 		}
+
+		private void btoAtras(object sender, RoutedEventArgs e)
+		{
+			this.NavigationService.Navigate(new Principal());
+		}
 	}
 }
