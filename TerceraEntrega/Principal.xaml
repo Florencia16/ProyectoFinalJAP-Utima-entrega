@@ -30,5 +30,6 @@
         <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="148" Margin="648,10,0,0" IsEditable="True" Text="CaracteristicaVariable">
             <Button Content="Manejador CV" Width="138" Click ="btoManejadorCarVariable"/>
         </ComboBox>
+		<Image Source="./imagen.jpg" Margin="0,62,0,28"></Image>
     </Grid>
 </Page>
