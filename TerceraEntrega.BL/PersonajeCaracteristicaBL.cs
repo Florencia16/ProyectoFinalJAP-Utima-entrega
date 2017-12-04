@@ -33,5 +33,10 @@ namespace TerceraEntrega.BL
             return aux;
         }
 
-    }
+		public static void eliminarPersonajeCarcteristicasPorPersonaje(int idPersonaje)
+		{
+			PersonajeCaracteristicaDA.EliminarPorPersonaje(idPersonaje);
+		}
+
+	}
 }

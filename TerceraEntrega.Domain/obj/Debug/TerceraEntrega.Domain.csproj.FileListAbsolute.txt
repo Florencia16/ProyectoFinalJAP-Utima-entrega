@@ -8,3 +8,8 @@ C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.Domain\bin\Debu
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.Domain\obj\Debug\TerceraEntrega.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.Domain\obj\Debug\TerceraEntrega.Domain.dll
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega.Domain\obj\Debug\TerceraEntrega.Domain.pdb
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega.Domain\bin\Debug\TerceraEntrega.Domain.dll
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega.Domain\bin\Debug\TerceraEntrega.Domain.pdb
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega.Domain\obj\Debug\TerceraEntrega.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega.Domain\obj\Debug\TerceraEntrega.Domain.dll
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega.Domain\obj\Debug\TerceraEntrega.Domain.pdb

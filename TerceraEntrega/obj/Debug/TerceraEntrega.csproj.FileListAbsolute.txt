@@ -56,3 +56,41 @@ C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Habil
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Raza\ManejadorRaza.g.cs
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\HabilidadEspecial\ManejadorHE.baml
 C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\Raza\ManejadorRaza.baml
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\bin\Debug\TerceraEntrega.exe.config
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\bin\Debug\TerceraEntrega.exe
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\bin\Debug\TerceraEntrega.pdb
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\bin\Debug\TerceraEntrega.BL.dll
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\bin\Debug\TerceraEntrega.Domain.dll
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\bin\Debug\TerceraEntrega.DA.dll
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\bin\Debug\TerceraEntrega.BL.pdb
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\bin\Debug\TerceraEntrega.Domain.pdb
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\bin\Debug\TerceraEntrega.DA.pdb
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\TerceraEntrega.csprojResolveAssemblyReference.cache
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\CaracteristicaVariable\CVariable.g.cs
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Clase\ManejadorClase.g.cs
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\HabilidadEspecial\ManejadorHE.g.cs
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Raza\ManejadorRaza.g.cs
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Personaje\PerCaracteristica.g.cs
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Personaje\AltaPersonaje.g.cs
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\MainWindow.g.cs
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Principal.g.cs
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\App.g.cs
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\TerceraEntrega_MarkupCompile.cache
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\TerceraEntrega_MarkupCompile.lref
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\CaracteristicaVariable\CVariable.baml
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Clase\ManejadorClase.baml
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\HabilidadEspecial\ManejadorHE.baml
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Raza\ManejadorRaza.baml
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Personaje\PerCaracteristica.baml
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Personaje\AltaPersonaje.baml
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\MainWindow.baml
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Principal.baml
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\TerceraEntrega.g.resources
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\TerceraEntrega.Properties.Resources.resources
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\TerceraEntrega.csproj.GenerateResource.Cache
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\TerceraEntrega.exe
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\TerceraEntrega.pdb
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Personaje\ListaPersonaje.g.cs
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Personaje\SubirNivel.g.cs
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Personaje\ListaPersonaje.baml
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\Personaje\SubirNivel.baml

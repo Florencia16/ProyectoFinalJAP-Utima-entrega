@@ -6,21 +6,83 @@
       xmlns:local="clr-namespace:TerceraEntrega.Personaje"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
-      Title="ListaPersonaje">
+      Title="ListaPersonaje"
+	  Name="pagina">
 
 	<Grid>
-		<ListView  Name ="ListaPersonajes" HorizontalAlignment="Left" Height="255" VerticalAlignment="Top" Width="300">
+		<ListView  Name ="ListaPersonajes" HorizontalAlignment="Left" Height="{Binding ActualHeight, ElementName=pagina}" VerticalAlignment="Top" Width="{Binding ActualWidth, ElementName=pagina}">
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<Grid>
-						<Border Margin="5" BorderBrush="Black" BorderThickness="1">
-							<Image Source="{Binding Imagen}" Stretch="Fill" Width="50" Height="50" />
+						<Border HorizontalAlignment="Center" Margin="5" BorderBrush="Black" BorderThickness="1">
+							<StackPanel Grid.Column="1" Margin="5">
+								<StackPanel Orientation="Horizontal" TextBlock.FontWeight="Bold" >
+									<Label Content="{Binding Nombre }" HorizontalAlignment="Left"  />
+									<Label Content="Nivel: " HorizontalAlignment="Right" />
+									<Label Content="{Binding Nivel }" HorizontalAlignment="Right" />
+								</StackPanel>
+								<Border Margin="5" BorderBrush="Black" BorderThickness="1"></Border>
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="60"/>
+										<ColumnDefinition Width="*"/>
+										<ColumnDefinition Width="*"/>
+									</Grid.ColumnDefinitions>
+									<Border Margin="5" BorderBrush="Black" BorderThickness="1" Width="50" Height="50">
+										<Image Source="{Binding Imagen}"  Width="50" Height="50" />
+									</Border>
+									<StackPanel Grid.Column="1" Margin="5">
+										<StackPanel Orientation="Horizontal" >
+											<Label Content="Raza: " />
+											<Label Content="{Binding Raza}" />
+										</StackPanel>
+										<StackPanel Orientation="Horizontal" >
+											<Label Content="Fuerza: " />
+											<Label Content="{Binding Fuerza}" />
+										</StackPanel>
+										<StackPanel Orientation="Horizontal" >
+											<Label Content="Destreza: " />
+											<Label Content="{Binding Destreza}"/>
+										</StackPanel>
+										<StackPanel Orientation="Horizontal" >
+											<Label Content="Constitucion: " />
+											<Label Content="{Binding Constitucion}"/>
+										</StackPanel>
+										<StackPanel Orientation="Horizontal" >
+											<Label Content="Caract. Var: " />
+											<Label Content="{Binding Fuerza}" />
+										</StackPanel>
+									</StackPanel>
+									<StackPanel Grid.Column="2" Margin="5">
+										<StackPanel Orientation="Horizontal" >
+											<Label Content="Clase: " />
+											<Label Content="{Binding Clase}"/>
+										</StackPanel>
+										<StackPanel Orientation="Horizontal" >
+											<Label Content="Inteligencia: " />
+											<Label Content="{Binding Inteligencia}"/>
+										</StackPanel>
+										<StackPanel Orientation="Horizontal" >
+											<Label Content="Sabiduria: " />
+											<Label Content="{Binding Sabiduria}"/>
+										</StackPanel>
+										<StackPanel Orientation="Horizontal" >
+											<Label Content="Carisma: " />
+											<Label Content="{Binding Carisma}"/>
+										</StackPanel>
+									</StackPanel>
+								</Grid>
+								<StackPanel Orientation="Horizontal" TextBlock.FontWeight="Bold" >
+									<Button Content="Ver Detalle" Height="36" HorizontalAlignment="Right" Width="98" Click="verdetalle" />
+									<Button Content="Editar" Height="36"  HorizontalAlignment="Right" Width="98" Click="editar" />
+									<Button Content="Eliminar" Height="36"  HorizontalAlignment="Right" Width="98"  Click="eliminar"/>
+									<Button Content="Subir Nivel" Height="36"  HorizontalAlignment="Right" Width="98"  Click="subirnivel"/>
+								</StackPanel>
+							</StackPanel>
 						</Border>
-						<TextBlock Text="{Binding Nombre }"></TextBlock>
 					</Grid>
 				</DataTemplate>
 			</ListView.ItemTemplate>
 		</ListView>
-
 	</Grid>
 </Page>

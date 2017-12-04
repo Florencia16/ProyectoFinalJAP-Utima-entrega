@@ -16,6 +16,7 @@ using TerceraEntrega.Domain;
 using TerceraEntrega.BL;
 using Microsoft.Win32;
 using System.IO;
+using TerceraEntrega.Personaje;
 
 namespace TerceraEntrega
 {
@@ -25,7 +26,7 @@ namespace TerceraEntrega
     /// 
     public partial class AltaPersonaje : Page
     {
-        Personaje p = new Personaje();
+		TerceraEntrega.Domain.Personaje p = new TerceraEntrega.Domain.Personaje();
         Clase c = new Clase();
         Raza r = new Raza(); 
         byte[] imagen;
@@ -51,6 +52,55 @@ namespace TerceraEntrega
             
             
         }
+
+		public AltaPersonaje(int id, Boolean readOnly)
+        {
+            InitializeComponent();
+
+            CboRaza.ItemsSource = RazaBL.Listar();
+            CboRaza.SelectedValuePath = "Id";
+
+            CboClase.ItemsSource = ClaseBL.Listar();
+            CboClase.SelectedValuePath = "Id";
+
+			p = PersonajeBL.Obtener(id);
+			c = ClaseBL.obtenerPorIdPersonaje(id);
+			r = RazaBL.obtenerPorPersonaje(id);
+
+			this.NombreTxt.Text = p.Nombre;
+			this.NivelTxt.Text = p.Nivel.ToString();
+			this.FueTxt.Text = p.Fuerza.ToString();
+			this.DesTXT.Text = p.Destreza.ToString();
+			this.ConstTxt.Text = p.Constitucion.ToString();
+			this.InteTxt.Text = p.Inteligencia.ToString();
+			this.SabTxt.Text = p.Sabiduria.ToString();
+			this.CarTxt.Text = p.Carisma.ToString();
+			this.Foto.Source = LoadImage(p.Imagen);
+
+			this.CboClase.SelectedItem = 1;
+			this.CboRaza.SelectedItem = 1;
+
+			this.Titulo.Content = "Modificar Personaje";
+			this.Cargar.Content = "Modificar";
+
+			if (readOnly) {
+				this.Cargar.Visibility = Visibility.Hidden;
+				this.NombreTxt.IsEnabled = false;
+				this.NivelTxt.IsEnabled = false;
+				this.FueTxt.IsEnabled = false;
+				this.DesTXT.IsEnabled = false;
+				this.ConstTxt.IsEnabled = false;
+				this.InteTxt.IsEnabled = false;
+				this.SabTxt.IsEnabled = false;
+				this.CarTxt.IsEnabled = false;
+				this.CboClase.IsEnabled = false;
+				this.CboRaza.IsEnabled = false;
+				this.ArchivoSelect.Visibility = Visibility.Hidden;
+				this.BotonCargarImagen.Visibility = Visibility.Hidden;
+				this.Titulo.Content = "Detalles Personaje";
+			}
+
+		}
 
         private void btoCargar(object sender, RoutedEventArgs e)
         {
@@ -117,17 +167,25 @@ namespace TerceraEntrega
                 p.Inteligencia = Inteligencia;
                 p.Sabiduria = Sabiduria;
                 p.Carisma = Carisma;
-                p.Imagen = imagen; 
+                p.Imagen = imagen;
 
-            
-                //Alta del Personaje
-                int newPersonaje = PersonajeBL.Crear(p,c,r );
-                if (newPersonaje > 0)
-                {
-                    SetClientMessage("Personaje agregado correctamente!", TipoMensaje.Correcto);
-                    this.NavigationService.Navigate(new PerCaracteristica()); 
-                   
-                }
+
+				//Alta del Personaje
+				if (p.Id == 0)
+				{
+					int newPersonaje = PersonajeBL.Crear(p, c, r);
+					if (newPersonaje > 0)
+					{
+						SetClientMessage("Personaje agregado correctamente!", TipoMensaje.Correcto);
+						this.NavigationService.Navigate(new PerCaracteristica());
+
+					}
+				}
+				else {
+					PersonajeBL.Modificar(p, c, r);
+					this.NavigationService.Navigate(new ListaPersonaje());
+				}
+				
 
             }
             catch (Exception ex)
@@ -198,7 +256,26 @@ namespace TerceraEntrega
             c = (Clase)CboClase.SelectedItem;
         }
 
-   
-    }
+
+		private static BitmapImage LoadImage(byte[] imageData)
+		{
+			if (imageData == null || imageData.Length == 0) return null;
+			var image = new BitmapImage();
+			using (var mem = new MemoryStream(imageData))
+			{
+				mem.Position = 0;
+				image.BeginInit();
+				image.CreateOptions = BitmapCreateOptions.PreservePixelFormat;
+				image.CacheOption = BitmapCacheOption.OnLoad;
+				image.UriSource = null;
+				image.StreamSource = mem;
+				image.EndInit();
+			}
+			image.Freeze();
+			return image;
+		}
+
+
+	}
     
 }

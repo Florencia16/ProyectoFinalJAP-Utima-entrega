@@ -96,8 +96,11 @@ namespace TerceraEntrega.DA
                     p.Inteligencia = (int)reader["Inteligencia"];
                     p.Sabiduria = (int)reader["Sabiduria"];
                     p.Carisma = (int)reader["Carisma"];
-                    p.Imagen=(byte[])reader["ImagenPers"]; 
-                    p.HabilidadesEspeciales = HabilidadEspecialDA.obtenerHabilidadesEspecialesDePersonaje(p.Id);
+					if (!Convert.IsDBNull(reader["ImagenPers"]))
+					{
+						p.Imagen = (byte[])reader["ImagenPers"];
+					}
+					p.HabilidadesEspeciales = HabilidadEspecialDA.obtenerHabilidadesEspecialesDePersonaje(p.Id);
                     retorno.Add(p);
                 }
 
@@ -110,7 +113,7 @@ namespace TerceraEntrega.DA
             List<Personaje> retorno = new List<Personaje>();
             using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
             {
-                string query = "SELECT Id, Nombre, Nivel, Fuerza, Destreza, Constitucion, Inteligencia, Sabiduria, Carisma FROM Personaje";
+                string query = "SELECT Id, Nombre, Nivel, Fuerza, Destreza, Constitucion, Inteligencia, Sabiduria, Carisma,ImagenPers FROM Personaje";
                 SqlCommand Comando = new SqlCommand(query, Connection);
                 Connection.Open();
                 SqlDataReader reader = Comando.ExecuteReader();
@@ -130,7 +133,11 @@ namespace TerceraEntrega.DA
                     p.Inteligencia = (int)reader["Inteligencia"];
                     p.Sabiduria = (int)reader["Sabiduria"];
                     p.Carisma = (int)reader["Carisma"];
-                    retorno.Add(p);
+					if (!Convert.IsDBNull(reader["ImagenPers"]))
+					{
+						p.Imagen = (byte[])reader["ImagenPers"];
+					}
+					retorno.Add(p);
                 }
 
             }

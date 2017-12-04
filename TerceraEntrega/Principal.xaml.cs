@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TerceraEntrega.Personaje;
 
 namespace TerceraEntrega
 {
@@ -54,7 +55,7 @@ namespace TerceraEntrega
 
         private void btoListarPersonaje(object sender, RoutedEventArgs e)
         {
-
-        }
+			this.NavigationService.Navigate(new ListaPersonaje());
+		}
     }
 }

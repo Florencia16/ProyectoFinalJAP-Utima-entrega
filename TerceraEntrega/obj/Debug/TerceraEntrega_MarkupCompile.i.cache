@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\obj\Debug\
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\obj\Debug\
 TerceraEntrega
 none
 false
 DEBUG;TRACE
-C:\Users\Ceibal\Documents\GitHub\ProyectoFinalJAP\TerceraEntrega\App.xaml
-81144465690
+C:\Users\Ceibal\Desktop\TAREA FINAL\ProyectoFinalJAP-Utima-entrega\TerceraEntrega\App.xaml
+10675645404
 
-16670678426
-151370768408
-CaracteristicaVariable\CVariable.xaml;Clase\ManejadorClase.xaml;HabilidadEspecial\ManejadorHE.xaml;Raza\ManejadorRaza.xaml;Personaje\PerCaracteristica.xaml;Personaje\AltaPersonaje.xaml;MainWindow.xaml;Principal.xaml;
+181806331897
+151953976744
+CaracteristicaVariable\CVariable.xaml;Clase\ManejadorClase.xaml;HabilidadEspecial\ManejadorHE.xaml;Personaje\ListaPersonaje.xaml;Personaje\SubirNivel.xaml;Raza\ManejadorRaza.xaml;Personaje\PerCaracteristica.xaml;Personaje\AltaPersonaje.xaml;MainWindow.xaml;Principal.xaml;
 
-True
+False
 

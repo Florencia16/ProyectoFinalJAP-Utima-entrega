@@ -66,6 +66,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Personaje\ListaPersonaje.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Personaje\SubirNivel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Raza\ManejadorRaza.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -90,6 +98,12 @@
     </Compile>
     <Compile Include="HabilidadEspecial\ManejadorHE.xaml.cs">
       <DependentUpon>ManejadorHE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Personaje\ListaPersonaje.xaml.cs">
+      <DependentUpon>ListaPersonaje.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Personaje\SubirNivel.xaml.cs">
+      <DependentUpon>SubirNivel.xaml</DependentUpon>
     </Compile>
     <Compile Include="Raza\ManejadorRaza.xaml.cs">
       <DependentUpon>ManejadorRaza.xaml</DependentUpon>

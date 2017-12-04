@@ -76,7 +76,7 @@ namespace TerceraEntrega.DA
             List<PersonajeCaracteristica> retorno = new List<PersonajeCaracteristica>();
             using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
             {
-                string query = "SELECT * FROM PersonajeCaracterisitica WHERE IdPER=" + id;
+                string query = "SELECT * FROM PersonajeCaracteristica WHERE IdPer=" + id;
                 SqlCommand Comando = new SqlCommand(query, Connection);
                 Connection.Open();
                 SqlDataReader reader = Comando.ExecuteReader();
@@ -92,5 +92,17 @@ namespace TerceraEntrega.DA
             }
             return retorno;
         }
-    }
+
+		public static void EliminarPorPersonaje(int idPersonaje)
+		{
+			using (SqlConnection Connection = new SqlConnection(Conectar.Instancia.CadenaConexion()))
+			{
+				string query = "DELETE FROM PersonajeCaracteristica WHERE IdPer= @IdPER";
+				SqlCommand Comando = new SqlCommand(query, Connection);
+				Comando.Parameters.AddWithValue("@IdPER", idPersonaje);
+				Connection.Open();
+				Comando.ExecuteNonQuery();
+			}
+		}
+	}
 }
